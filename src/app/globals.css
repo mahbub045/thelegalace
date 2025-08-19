@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+.font-yeseva {
+  font-family: var(--font-yeseva-one), serif;
+}
+.font-outfit {
+  font-family: var(--font-outfit), sans-serif;
+}
+.font-wix-madefor {
+  font-family: var(--font-wix-madefor-text), sans-serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
