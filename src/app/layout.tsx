@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Wix_Madefor_Text, Yeseva_One } from "next/font/google";
+import { Outfit, Wix_Madefor_Text, Yeseva_One } from "next/font/google";
 import "./globals.css";
 
 const yesevaOne = Yeseva_One({
@@ -7,6 +7,13 @@ const yesevaOne = Yeseva_One({
   subsets: ["latin"],
   weight: "400",
 });
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 const wixMadeforText = Wix_Madefor_Text({
   variable: "--font-wix-madefor-text",
   subsets: ["latin"],
@@ -27,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={`${yesevaOne.className} ${wixMadeforText.variable} antialiased`}
+        className={`${yesevaOne.className} ${outfit.variable} ${wixMadeforText.variable} antialiased`}
       >
         {children}
       </body>
