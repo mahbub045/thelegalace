@@ -100,6 +100,26 @@ const Services: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className="flex flex-cols-1 md:flex-cols-2 gap-4">
+        <div className="flex-1">
+          <Image
+            src="/images/services/ServicesImg1.png"
+            alt="Elegant courtroom interior with wooden furniture and warm lighting"
+            className="rounded-lg object-cover w-full h-48 md:h-64"
+            width={400}
+            height={200}
+          />
+        </div>
+        <div className="flex-3">
+          <Image
+            src="/images/services/Courtroom.png"
+            alt="Elegant courtroom interior with wooden furniture and warm lighting"
+            className="rounded-lg object-cover w-full h-48 md:h-[600px]"
+            width={900}
+            height={600}
+          />
+        </div>
+      </div>
     </div>
   );
 };
