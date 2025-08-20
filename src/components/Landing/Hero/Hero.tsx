@@ -58,17 +58,17 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="flex justify-between items-center gap-4 mt-24">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4 mt-16 md:mt-24">
             {/* Description */}
-            <div className="lg:col-span-1">
-              <p className="text-white/90 text-base leading-relaxed max-w-xs">
+            <div className="w-full md:w-auto mb-8 md:mb-0">
+              <p className="text-white/90 text-base leading-relaxed max-w-xs mx-auto md:mx-0 text-center md:text-left">
                 We are dedicated to providing exceptional legal representation
                 across a broad spectrum of practice areas.
               </p>
             </div>
 
-            <div className="text-center lg:text-left">
-              <div className="text-6xl lg:text-7xl font-bold text-white mb-2 leading-none">
+            <div className="text-center md:text-left mb-8 md:mb-0">
+              <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-2 leading-none">
                 30
               </div>
               <div className="text-white/80 text-sm font-medium tracking-wider">
@@ -76,14 +76,14 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-4">
+            <div className="hidden md:flex flex-col items-center gap-4">
               <span className="block w-[1px] h-16 bg-white rounded-full mb-1"></span>
               <span className="block w-2 h-2 bg-white rounded-full mb-1"></span>
               <span className="block w-[1px] h-16 bg-white rounded-full"></span>
             </div>
 
-            <div className="text-center lg:text-left">
-              <div className="text-6xl lg:text-7xl font-bold text-white mb-2 leading-none">
+            <div className="text-center md:text-left mb-8 md:mb-0">
+              <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-2 leading-none">
                 600
               </div>
               <div className="text-white/80 text-sm font-medium tracking-wider">
@@ -91,14 +91,14 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-4">
+            <div className="hidden md:flex flex-col items-center gap-4">
               <span className="block w-[1px] h-16 bg-white rounded-full mb-1"></span>
               <span className="block w-2 h-2 bg-white rounded-full mb-1"></span>
               <span className="block w-[1px] h-16 bg-white rounded-full"></span>
             </div>
 
-            <div className="text-center lg:text-left">
-              <div className="text-6xl lg:text-7xl font-bold text-white mb-2 leading-none">
+            <div className="text-center md:text-left">
+              <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-2 leading-none">
                 1300
               </div>
               <div className="text-white/80 text-sm font-medium tracking-wider">
@@ -110,7 +110,6 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Image Indicators */}
-      {/* <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20"> */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
         {images.map((_, index) => (
           <button

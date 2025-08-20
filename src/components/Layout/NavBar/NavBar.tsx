@@ -48,7 +48,7 @@ const NavBar: React.FC = () => {
             />
           </Link>
 
-          <nav className="hidden md:flex gap-8 items-center">
+          <nav className="hidden lg:flex gap-8 items-center">
             {navItems.map((item) => (
               <Link
                 key={item}
@@ -71,7 +71,7 @@ const NavBar: React.FC = () => {
 
             <button
               type="button"
-              className="md:hidden p-2 rounded font-outfit bg-white/6 text-white/90 hover:bg-white/10"
+              className="lg:hidden p-2 rounded font-outfit bg-white/6 text-white/90 hover:bg-white/10"
               aria-label="Open menu"
               onClick={() => setMobileMenuOpen((prev) => !prev)}
             >
