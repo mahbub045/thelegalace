@@ -7,38 +7,37 @@ const Contact: React.FC = () => {
       <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-12 md:py-16 text-white relative overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:gap-16 xl:gap-56 mb-8 sm:mb-12 md:mb-16">
           {/* Contact Header */}
-          <div className="flex items-start mt-6 mb-6 sm:mb-8 lg:mb-12">
-            <span className="text-base sm:text-lg lg:text-2xl font-medium tracking-widest">
+          <div className="flex items-center mb-6 sm:mb-8 lg:mb-12">
+            <span className="text-sm sm:text-base lg:text-xl font-medium tracking-widest">
               Contact
             </span>
-            <ArrowRightToLine className="ml-2 sm:ml-3 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-link" />
+            <ArrowRightToLine className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 text-link" />
           </div>
           {/* Content Area */}
           <div className="flex-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight uppercase">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight uppercase mb-8 sm:mb-12 md:mb-16">
               Our company has built a reputation as a trusted legal partner
             </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-16 md:mt-20">
-              <div className="relative">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 sm:mt-12 md:mt-16 lg:mt-20">
+              <div className="relative order-2 sm:order-1">
                 <Image
                   src="/images/contact/law-office.png"
                   alt="Elegant law office interior with wooden furniture and warm lighting"
                   width={500}
                   height={300}
-                  className="rounded-md object-cover w-full h-40 sm:h-48 md:h-64"
+                  className="rounded-md object-cover w-full h-48 sm:h-56 md:h-64"
                 />
                 {/* Overlay over image */}
                 <div className="absolute inset-0 bg-secondary/30 rounded-md pointer-events-none" />
               </div>
-              <div className="font-outfit flex flex-col justify-center">
-                <p>
+              <div className="font-outfit flex flex-col justify-center order-1 sm:order-2">
+                <p className="text-sm sm:text-base leading-relaxed mb-4">
                   Our core values of integrity, dedication, and results guide
                   everything we do. We believe in building strong, lasting
                   relationships with our clients based on trust and mutual
                   respect.
                 </p>
-                <br />
-                <p>
+                <p className="text-sm sm:text-base leading-relaxed">
                   Our attorneys are not only legal experts but also passionate
                   advocates who are committed to making a positive impact
                   through their work.
@@ -49,7 +48,7 @@ const Contact: React.FC = () => {
         </div>
       </div>
       {/* law library */}
-      <div className="relative h-[700px] overflow-hidden mb-8 sm:mb-12 md:mb-16">
+      <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden mb-8 sm:mb-12 md:mb-16">
         <Image
           src="/images/contact/law-library.png"
           alt="Elegant law library with wooden shelves and warm lighting"
@@ -80,16 +79,16 @@ const Contact: React.FC = () => {
           />
         </div>
         {/* Quote overlay */}
-        <div className="absolute inset-0 flex items-center justify-center h-96 sm:h-[500px] md:h-[700px]">
-          <div className="relative bg-[#1a3a42]/90 backdrop-blur-sm p-8 sm:p-12 max-w-2xl mx-4 rounded-lg">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="relative bg-[#1a3a42]/90 backdrop-blur-sm p-4 sm:p-6 md:p-8 lg:p-12 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mx-4 rounded-lg">
             {/* Decorative quote marks */}
-            <div className="absolute -top-4 -left-4">
+            <div className="absolute -top-2 -left-2 sm:-top-3 sm:-left-3 md:-top-4 md:-left-4">
               <svg
-                width="32"
-                height="24"
+                width="20"
+                height="15"
                 viewBox="0 0 32 24"
                 fill="none"
-                className="text-amber-300"
+                className="text-amber-300 sm:w-6 sm:h-[18px] md:w-8 md:h-6"
               >
                 <path
                   d="M8 0L0 12H4L8 8V24H16V0H8ZM24 0L16 12H20L24 8V24H32V0H24Z"
@@ -97,13 +96,13 @@ const Contact: React.FC = () => {
                 />
               </svg>
             </div>
-            <div className="absolute -bottom-4 -right-4 rotate-180">
+            <div className="absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 md:-bottom-4 md:-right-4 rotate-180">
               <svg
-                width="32"
-                height="24"
+                width="20"
+                height="15"
                 viewBox="0 0 32 24"
                 fill="none"
-                className="text-amber-300"
+                className="text-amber-300 sm:w-6 sm:h-[18px] md:w-8 md:h-6"
               >
                 <path
                   d="M8 0L0 12H4L8 8V24H16V0H8ZM24 0L16 12H20L24 8V24H32V0H24Z"
@@ -113,10 +112,10 @@ const Contact: React.FC = () => {
             </div>
 
             <blockquote className="text-center text-white">
-              <p className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight mb-6">
+              <p className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-bold leading-tight mb-3 sm:mb-4 md:mb-6">
                 &quot;EXCEPTIONAL LEGAL REPRESENTATION, DISTINCTLY YOURS.&quot;
               </p>
-              <footer className="text-xs text-white/80">
+              <footer className="text-xs sm:text-sm text-white/80">
                 Sarah J. Williams / senior partner
               </footer>
             </blockquote>
