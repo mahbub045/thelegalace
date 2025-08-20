@@ -49,16 +49,34 @@ const Contact: React.FC = () => {
         </div>
         {/* law library */}
       </div>
-      <div className="relative pb-20">
+      <div className="relative h-[700px] overflow-hidden">
         <Image
           src="/images/contact/law-library.png"
           alt="Elegant law library with wooden shelves and warm lighting"
-          className="object-cover w-full h-96 sm:h-[500px] md:h-[700px]"
+          className="object-cover w-full h-full"
           width={1200}
           height={900}
+          priority
         />
-        {/* Overlay over image */}
-        <div className="absolute inset-0 bg-secondary/20 h-96 sm:h-[500px] md:h-[700px] pointer-events-none" />
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />{" "}
+        {/* Overlay */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Diagonal lines */}
+          <div
+            className="absolute w-px h-full bg-white/50 transform rotate-45"
+            style={{ left: "20%" }}
+          />
+          <div
+            className="absolute w-px h-full bg-white/50 transform -rotate-45"
+            style={{ right: "20%" }}
+          />
+        </div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary/90 text-white p-8 text-center max-w-md w-4/5">
+          <h1 className="text-2xl font-bold mb-2">
+            &quot;EXCEPTIONAL LEGAL REPRESENTATION, DISTINCTIVELY YOURS.&quot;
+          </h1>
+          <p className="text-xs font-outfit">Sarah J. Williams / Senior Partner</p>
+        </div>
       </div>
     </>
   );
