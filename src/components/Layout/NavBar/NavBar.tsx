@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const NavBar: React.FC = () => {
   const navItems = [
@@ -14,10 +14,28 @@ const NavBar: React.FC = () => {
     "Contact",
   ];
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="w-full fixed top-0 z-50">
-      <div className="bg-transparent">
-        <div className="mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="w-full fixed top-0 z-50 transition-colors duration-300">
+      <div
+        className={
+          scrolled
+            ? "backdrop-blur-sm bg-[#0b232b]/70 border-b border-[#06303a]/30 shadow-md"
+            : "bg-transparent"
+        }
+      >
+        <div className="mx-auto px-6 py-4 flex items-center justify-between transition-all duration-300">
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo.png"
