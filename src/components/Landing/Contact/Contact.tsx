@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
         </div>
       </div>
       {/* law library */}
-      <div className="relative h-[700px] overflow-hidden">
+      <div className="relative h-[700px] overflow-hidden mb-8 sm:mb-12 md:mb-16">
         <Image
           src="/images/contact/law-library.png"
           alt="Elegant law library with wooden shelves and warm lighting"
