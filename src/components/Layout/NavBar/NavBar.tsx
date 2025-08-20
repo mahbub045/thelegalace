@@ -16,7 +16,7 @@ const NavBar: React.FC = () => {
 
   return (
     <header className="w-full fixed top-0 z-50">
-      <div className="backdrop-blur-sm bg-gradient-to-b from-[#0b232b]/95 to-transparent border-b border-[#06303a]/30">
+      <div className="bg-transparent">
         <div className="mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
