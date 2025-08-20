@@ -2,12 +2,39 @@ import { ArrowRightToLine } from "lucide-react";
 import Image from "next/image";
 
 const Contact: React.FC = () => {
+  const ourGoals = [
+    {
+      id: "mission",
+      image: "/images/contact/mission.png",
+      alt: "Mission - Legal professionals in discussion",
+      title: "Our Mission",
+      description:
+        "To provide exceptional legal services with unwavering integrity, ensuring our clients receive the highest quality representation while fostering justice and fairness in every case we handle.",
+    },
+    {
+      id: "vision",
+      image: "/images/contact/vision.png",
+      alt: "Vision - Modern law office with city view",
+      title: "Our Vision",
+      description:
+        "To be the premier legal firm recognized for excellence, innovation, and client-centered approach, setting new standards in legal practice and making justice accessible to all.",
+    },
+    {
+      id: "values",
+      image: "/images/contact/values.png",
+      alt: "Values - Team collaboration and ethics",
+      title: "Our Values",
+      description:
+        "Integrity, Excellence, and Compassion guide every decision we make. We believe in building lasting relationships based on trust, delivering results through dedication, and treating every client with respect and understanding.",
+    },
+  ];
+
   return (
     <>
       <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-12 md:py-16 text-white relative overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:gap-16 xl:gap-56 mb-8 sm:mb-12 md:mb-16">
           {/* Contact Header */}
-          <div className="flex items-center mb-6 sm:mb-8 lg:mb-12">
+          <div className="flex items-start mt-6 sm:mt-8 lg:mt-12">
             <span className="text-sm sm:text-base lg:text-xl font-medium tracking-widest">
               Contact
             </span>
@@ -119,6 +146,54 @@ const Contact: React.FC = () => {
                 Sarah J. Williams / senior partner
               </footer>
             </blockquote>
+          </div>
+        </div>
+      </div>
+      {/* contact last part */}
+      <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-12 md:py-16 text-white relative overflow-hidden">
+        <div className="flex flex-col lg:flex-row lg:gap-16 xl:gap-24 2xl:gap-32">
+          {/* Contact Header - Left Side */}
+          <div className="flex items-start mb-8 lg:mb-0 lg:w-1/4 xl:w-1/5">
+            <div className="flex items-center gap-4">
+              <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-medium tracking-widest">
+                Contact
+              </span>
+              <ArrowRightToLine className="ml-2 lg:ml-0 w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 text-link" />
+            </div>
+          </div>
+
+          {/* Mission, Vision, Values Content - Right Side */}
+          <div className="lg:w-3/4 xl:w-4/5">
+            <div className="space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12">
+              {ourGoals.map((item, index, array) => (
+                <div
+                  key={item.id}
+                  className={`flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 ${
+                    index < array.length - 1
+                      ? "pb-6 sm:pb-8 md:pb-10 lg:pb-12 border-b border-white/20"
+                      : ""
+                  }`}
+                >
+                  <div className="sm:w-1/3 md:w-2/5 lg:w-1/3 xl:w-2/5">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      width={400}
+                      height={280}
+                      className="rounded-md object-cover w-full h-40 sm:h-32 md:h-36 lg:h-40 xl:h-44"
+                    />
+                  </div>
+                  <div className="sm:w-2/3 md:w-3/5 lg:w-2/3 xl:w-3/5">
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold mb-2 sm:mb-3 md:mb-4 text-secondary uppercase tracking-wide">
+                      {item.title}
+                    </h3>
+                    <p className="font-outfit text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-white/90">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
