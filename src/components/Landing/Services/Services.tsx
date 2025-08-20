@@ -55,7 +55,7 @@ const Services: React.FC = () => {
               <Image
                 src="/images/services/ServicesImg1.png"
                 alt="Elegant courtroom interior with wooden furniture and warm lighting"
-                className="rounded-lg sm:rounded-2xl object-cover w-full h-40 sm:h-48 md:h-64 lg:h-80"
+                className="rounded-md object-cover w-full h-40 sm:h-48 md:h-64 lg:h-80"
                 width={300}
                 height={320}
               />
@@ -64,7 +64,7 @@ const Services: React.FC = () => {
               <Image
                 src="/images/services/ServicesImg2.png"
                 alt="Elegant courtroom interior with wooden furniture and warm lighting"
-                className="rounded-lg object-cover w-full h-40 sm:h-48 md:h-64 lg:h-80"
+                className="rounded-md object-cover w-full h-40 sm:h-48 md:h-64 lg:h-80"
                 width={300}
                 height={320}
               />
@@ -84,11 +84,11 @@ const Services: React.FC = () => {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="group flex items-center justify-between p-4 sm:p-6 bg-slate-800/30 border border-secondary/50 rounded-lg hover:bg-slate-700/40 transition-all duration-300 cursor-pointer"
+                className="group flex items-center justify-between p-4 sm:p-6 bg-slate-800/30 border border-secondary/50 rounded-md hover:bg-slate-700/40 transition-all duration-300 cursor-pointer"
               >
                 <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-6 flex-1 min-w-0">
                   {/* Service Image */}
-                  <div className="w-16 h-12 sm:w-20 sm:h-14 md:w-24 md:h-16 rounded-sm overflow-hidden flex-shrink-0">
+                  <div className="w-16 h-12 sm:w-20 sm:h-14 md:w-24 md:h-16 rounded-md overflow-hidden flex-shrink-0">
                     <Image
                       src={service.image}
                       alt={service.title}
@@ -114,20 +114,22 @@ const Services: React.FC = () => {
 
       {/* Bottom Image Section */}
       <div className="flex flex-col sm:flex-row gap-4">
-        <div className="flex-1 sm:max-w-[40%]">
+        <div className="flex-1 sm:max-w-[40%] relative">
           <Image
-            src="/images/services/ServicesImg1.png"
+            src="/images/services/supremecourt.png"
             alt="Elegant courtroom interior with wooden furniture and warm lighting"
-            className="rounded-lg object-cover w-full h-40 sm:h-48 md:h-64"
+            className="rounded-md object-cover w-full h-40 sm:h-48 md:h-64"
             width={400}
             height={200}
           />
+          {/* Overlay only over image */}
+          <div className="absolute top-0 left-0 w-full h-40 sm:h-48 md:h-64 bg-secondary/40 rounded-md pointer-events-none" />
         </div>
         <div className="flex-1 sm:flex-[3]">
           <Image
             src="/images/services/Courtroom.png"
             alt="Elegant courtroom interior with wooden furniture and warm lighting"
-            className="rounded-lg object-cover w-full h-40 sm:h-48 md:h-64 lg:h-[600px]"
+            className="rounded-md object-cover w-full h-40 sm:h-48 md:h-64 lg:h-[600px]"
             width={900}
             height={600}
           />
