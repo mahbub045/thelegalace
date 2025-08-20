@@ -1,5 +1,6 @@
 "use client";
 
+import { Handbag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -58,30 +59,16 @@ const NavBar: React.FC = () => {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4">
-            {/* Desktop Menu button */}
+          <div>
+            {/* Cart button */}
             <button
               type="button"
-              className="hidden md:flex items-center gap-3 font-outfit text-sm text-white/90 hover:text-white"
+              className="me-2 text-center text-white/90 hover:text-white hover:cursor-pointer"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-              <span className="uppercase tracking-wider">Menu</span>
+              <Handbag />
             </button>
 
-            {/* Mobile hamburger */}
+            {/* Mobile Menu */}
             <button
               type="button"
               className="md:hidden p-2 rounded font-outfit bg-white/6 text-white/90 hover:bg-white/10"
