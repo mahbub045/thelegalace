@@ -7,22 +7,22 @@ const Services: React.FC = () => {
     {
       id: 1,
       title: "CORPORATE LAW",
-      image: "/images/services/ServicesImg1.png",
+      image: "/images/services/CLaw.png",
     },
     {
       id: 2,
       title: "REAL ESTATE LAW",
-      image: "/images/services/ServicesImg2.png",
+      image: "/images/services/RELaw.png",
     },
     {
       id: 3,
       title: "EMPLOYMENT LAW",
-      image: "/images/services/ServicesImg1.png",
+      image: "/images/services/ELaw.png",
     },
     {
       id: 4,
       title: "ENVIRONMENTAL LAW",
-      image: "/images/services/ServicesImg2.png",
+      image: "/images/services/EVLaw.png",
     },
   ];
 
@@ -77,12 +77,12 @@ const Services: React.FC = () => {
               >
                 <div className="flex items-center space-x-6">
                   {/* Service Image */}
-                  <div className="w-16 h-16 rounded-lg overflow-hidden">
+                  <div className="w-24 h-16 rounded-sm overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.title}
                       width={100}
-                      height={80}
+                      height={70}
                       className="w-full h-full object-cover"
                     />
                   </div>
