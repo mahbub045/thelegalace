@@ -165,31 +165,31 @@ const Contact: React.FC = () => {
           {/* Mission, Vision, Values Content - Right Side */}
           <div className="lg:w-3/4 xl:w-4/5">
             <div className="space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12">
-              {ourGoals.map((item, index, array) => (
-                <div
-                  key={item.id}
-                  className={`flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 ${
-                    index < array.length - 1
-                      ? "pb-6 sm:pb-8 md:pb-10 lg:pb-12 border-b border-white/20"
-                      : ""
-                  }`}
-                >
-                  <div className="sm:w-1/3 md:w-2/5 lg:w-1/3 xl:w-2/5">
-                    <Image
-                      src={item.image}
-                      alt={item.alt}
-                      width={400}
-                      height={280}
-                      className="rounded-md object-cover w-full h-40 sm:h-32 md:h-36 lg:h-40 xl:h-44"
-                    />
-                  </div>
-                  <div className="sm:w-2/3 md:w-3/5 lg:w-2/3 xl:w-3/5">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold mb-2 sm:mb-3 md:mb-4 text-secondary uppercase tracking-wide">
+              {ourGoals.map((item, index) => (
+                <div key={item.id}>
+                  <div className="flex justify-between mb-2">
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-secondary uppercase tracking-wide">
+                      {index + 1}.
+                    </h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-secondary uppercase tracking-wide">
                       {item.title}
                     </h3>
-                    <p className="font-outfit text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-white/90">
-                      {item.description}
-                    </p>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 pt-6 sm:pt-8 md:pt-10 lg:pt-12 border-t-2 border-white/20">
+                    <div className="sm:w-1/3 md:w-2/5 lg:w-1/3 xl:w-2/5">
+                      <Image
+                        src={item.image}
+                        alt={item.alt}
+                        width={400}
+                        height={280}
+                        className="rounded-md object-cover w-full h-40 sm:h-32 md:h-36 lg:h-40 xl:h-44"
+                      />
+                    </div>
+                    <div className="sm:w-2/3 md:w-3/5 lg:w-2/3 xl:w-3/5">
+                      <p className="font-outfit text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-white/90">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
