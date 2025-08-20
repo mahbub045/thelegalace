@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col justify-center min-h-screen px-6">
+      <div className="relative z-10 flex flex-col justify-center min-h-screen px-6 mb-8">
         <div className="mx-auto w-full">
           {/* Hero Title */}
           <div className="text-center mb-16">
@@ -58,7 +58,6 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Stats Section */}
-          {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center mt-36"> */}
           <div className="flex justify-between items-center gap-4 mt-24">
             {/* Description */}
             <div className="lg:col-span-1">
@@ -112,7 +111,7 @@ const Hero: React.FC = () => {
 
       {/* Image Indicators */}
       {/* <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20"> */}
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
         {images.map((_, index) => (
           <button
             key={index}

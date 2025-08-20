@@ -1,4 +1,5 @@
 import Hero from "@/components/Landing/Hero/Hero";
+import Services from "@/components/Landing/Services/Services";
 import NavBar from "@/components/Layout/NavBar/NavBar";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <NavBar />
       <Hero />
+      <Services />
     </>
   );
 }
