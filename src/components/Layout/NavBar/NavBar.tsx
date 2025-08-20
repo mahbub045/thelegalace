@@ -16,6 +16,7 @@ const NavBar: React.FC = () => {
   ];
 
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -68,11 +69,11 @@ const NavBar: React.FC = () => {
               <Handbag />
             </button>
 
-            {/* Mobile Menu */}
             <button
               type="button"
               className="md:hidden p-2 rounded font-outfit bg-white/6 text-white/90 hover:bg-white/10"
               aria-label="Open menu"
+              onClick={() => setMobileMenuOpen((prev) => !prev)}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,6 +90,29 @@ const NavBar: React.FC = () => {
                 />
               </svg>
             </button>
+            <div>
+              {mobileMenuOpen && (
+                <nav className="fixed inset-0 z-50 bg-[#0b232b]/95 flex flex-col items-center justify-center gap-8 md:hidden">
+                  <button
+                    className="absolute top-4 right-7 text-white text-6xl"
+                    aria-label="Close menu"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    &times;
+                  </button>
+                  {navItems.map((item) => (
+                    <Link
+                      key={item}
+                      href="#"
+                      className="font-outfit font-bold text-base text-white uppercase tracking-widest"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item}
+                    </Link>
+                  ))}
+                </nav>
+              )}
+            </div>
           </div>
         </div>
       </div>
