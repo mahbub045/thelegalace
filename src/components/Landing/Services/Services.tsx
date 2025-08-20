@@ -27,7 +27,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-12 md:py-16 text-white relative overflow-hidden">
+    <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-12 md:py-16 text-white relative overflow-hidden">
       {/* Hero Section */}
       <div className="mb-8 sm:mb-12">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -114,7 +114,7 @@ const Services: React.FC = () => {
 
       {/* Bottom Image Section */}
       <div className="flex flex-col sm:flex-row gap-4">
-        <div className="flex-1 sm:max-w-[40%] relative">
+        <div className="flex-1 sm:max-w-[30%] relative">
           <Image
             src="/images/services/supremecourt.png"
             alt="Elegant courtroom interior with wooden furniture and warm lighting"
