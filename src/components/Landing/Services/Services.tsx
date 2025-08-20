@@ -48,7 +48,7 @@ const Services: React.FC = () => {
               <Image
                 src="/images/services/ServicesImg1.png"
                 alt="Elegant courtroom interior with wooden furniture and warm lighting"
-                className="rounded-lg object-cover w-full h-48 md:h-64 lg:h-80"
+                className="rounded-2xl object-cover w-full h-48 md:h-64 lg:h-80"
                 width={300}
                 height={320}
               />
@@ -57,7 +57,7 @@ const Services: React.FC = () => {
               <Image
                 src="/images/services/ServicesImg2.png"
                 alt="Elegant courtroom interior with wooden furniture and warm lighting"
-                className="rounded-lg object-cover w-full h-48 md:h-64 lg:h-80"
+                className="rounded-xl object-cover w-full h-48 md:h-64 lg:h-80"
                 width={300}
                 height={320}
               />

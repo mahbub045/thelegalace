@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               LEGAL COUNSEL
             </h1>
 
-            <button className="inline-flex items-center bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-3 rounded-full hover:bg-white/30 transition-all duration-300 group">
+            <button className="inline-flex items-center bg-white/20 backdrop-blur-sm border border-secondary text-white px-8 py-3 rounded-2xl hover:bg-white/30 hover:cursor-pointer transition-all duration-300 group">
               <span className="font-medium text-sm tracking-wider mr-3">
                 Discover
               </span>
