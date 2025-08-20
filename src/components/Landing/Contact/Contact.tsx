@@ -79,14 +79,48 @@ const Contact: React.FC = () => {
             style={{ right: "20%" }}
           />
         </div>
-        
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary/90 text-white p-8 text-center max-w-md w-4/5">
-          <h1 className="text-2xl font-bold mb-2">
-            &quot;EXCEPTIONAL LEGAL REPRESENTATION, DISTINCTIVELY YOURS.&quot;
-          </h1>
-          <p className="text-xs font-outfit">
-            Sarah J. Williams / Senior Partner
-          </p>
+        {/* Quote overlay */}
+        <div className="absolute inset-0 flex items-center justify-center h-96 sm:h-[500px] md:h-[700px]">
+          <div className="relative bg-[#1a3a42]/90 backdrop-blur-sm p-8 sm:p-12 max-w-2xl mx-4 rounded-lg">
+            {/* Decorative quote marks */}
+            <div className="absolute -top-4 -left-4">
+              <svg
+                width="32"
+                height="24"
+                viewBox="0 0 32 24"
+                fill="none"
+                className="text-amber-300"
+              >
+                <path
+                  d="M8 0L0 12H4L8 8V24H16V0H8ZM24 0L16 12H20L24 8V24H32V0H24Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div className="absolute -bottom-4 -right-4 rotate-180">
+              <svg
+                width="32"
+                height="24"
+                viewBox="0 0 32 24"
+                fill="none"
+                className="text-amber-300"
+              >
+                <path
+                  d="M8 0L0 12H4L8 8V24H16V0H8ZM24 0L16 12H20L24 8V24H32V0H24Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+
+            <blockquote className="text-center text-white">
+              <p className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight mb-6">
+                &quot;EXCEPTIONAL LEGAL REPRESENTATION, DISTINCTLY YOURS.&quot;
+              </p>
+              <footer className="text-xs text-white/80">
+                Sarah J. Williams / senior partner
+              </footer>
+            </blockquote>
+          </div>
         </div>
       </div>
     </>
