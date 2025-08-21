@@ -79,12 +79,12 @@ const Contact: React.FC = () => {
         <Image
           src="/images/contact/law-library.png"
           alt="Elegant law library with wooden shelves and warm lighting"
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full shadow-2xl"
           width={1200}
           height={900}
           priority
         />
-        <div className="absolute inset-0 bg-black/20 pointer-events-none" />{" "}
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/10 to-primary/95"/>
         {/* Overlay */}
         <div className="absolute inset-0 pointer-events-none">
           {/* Diagonal lines */}
@@ -139,10 +139,10 @@ const Contact: React.FC = () => {
             </div>
 
             <blockquote className="text-center text-white">
-              <p className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-bold leading-tight mb-3 sm:mb-4 md:mb-6">
+              <p className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl leading-tight mb-3 sm:mb-4 md:mb-6">
                 &quot;EXCEPTIONAL LEGAL REPRESENTATION, DISTINCTLY YOURS.&quot;
               </p>
-              <footer className="text-xs sm:text-sm text-white/80">
+              <footer className="font-outfit text-xs sm:text-sm text-white/80">
                 Sarah J. Williams / senior partner
               </footer>
             </blockquote>
