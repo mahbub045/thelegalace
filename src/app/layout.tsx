@@ -64,10 +64,6 @@ export const metadata: Metadata = {
     follow: true,
     nocache: false,
   },
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0b232b" },
-    { color: "#ffffff" },
-  ],
 };
 
 export default function RootLayout({
