@@ -41,9 +41,10 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full border-b border-white/20" />
+      <div className="w-full  border-b border-white/20" />
+
       {/* Bottom row: socials left, copyright centered */}
-      <div className="flex items-center justify-between mx-auto px-6 sm:px-8 lg:px-20 pt-2 md:pt-4 pb-8 md:py-10">
+      <div className="flex items-center justify-center gap-5 mx-auto px-6 sm:px-8 lg:px-20 pt-2 md:pt-4 pb-8 md:py-10">
         <div className="flex items-center gap-3">
           <a
             aria-label="facebook"
@@ -75,10 +76,8 @@ const Footer: React.FC = () => {
           </a>
         </div>
 
-        <div className="flex-1 flex justify-center">
-          <div className="font-outfit text-sm text-blue-200/80">
-            © {new Date().getFullYear()} The Legal Ace. All Rights Reserved.
-          </div>
+        <div className="font-outfit text-sm text-blue-200/80">
+          © {new Date().getFullYear()} The Legal Ace. All Rights Reserved.
         </div>
       </div>
     </footer>
