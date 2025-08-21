@@ -28,11 +28,9 @@
   --color-link: var(--link);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0b232b;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #0b232b;
+  --foreground: #ededed;
 }
 
 body {
