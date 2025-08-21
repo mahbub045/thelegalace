@@ -34,14 +34,14 @@ const Contact: React.FC = () => {
       <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-8 sm:py-12 md:py-16 text-white relative overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:gap-16 xl:gap-56 mb-8 sm:mb-12 md:mb-16">
           {/* Contact Header */}
-          <div className="flex items-start mt-6 sm:mt-8 lg:mt-12">
+          <div className="flex items-start mt-6 sm:mt-8 lg:mt-12 mb-6">
             <span className="text-sm sm:text-base lg:text-xl font-medium tracking-widest">
               Contact
             </span>
             <ArrowRightToLine className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 text-link" />
           </div>
           {/* Content Area */}
-          <div className="flex-1">
+          <div className="flex-1 px-10">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight uppercase mb-8 sm:mb-12 md:mb-16">
               Our company has built a reputation as a trusted legal partner
             </h1>
@@ -163,8 +163,8 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Mission, Vision, Values Content - Right Side */}
-          <div className="lg:w-3/4 xl:w-4/5">
-            <div className="space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12">
+          <div className="w-full lg:w-[98%]">
+            <div className="space-y-6 sm:space-y-8">
               {ourGoals.map((item, index) => (
                 <div key={item.id}>
                   <div className="flex justify-between mb-2">
@@ -175,7 +175,7 @@ const Contact: React.FC = () => {
                       {item.title}
                     </h3>
                   </div>
-                  <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 pt-6 sm:pt-8 md:pt-10 lg:pt-12 border-t-2 border-white/20">
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 pt-6 md:pt-8 border-t-2 border-white/20">
                     <div className="sm:w-1/3 md:w-2/5 lg:w-1/3 xl:w-2/5">
                       <Image
                         src={item.image}

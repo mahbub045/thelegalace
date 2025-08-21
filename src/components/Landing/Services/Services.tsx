@@ -40,7 +40,7 @@ const Services: React.FC = () => {
       {/* Main Content Section */}
       <div className="flex flex-col lg:flex-row lg:gap-16 xl:gap-56 mb-8 sm:mb-12 md:mb-16">
         {/* Services Header */}
-        <div className="flex items-start mt-6 sm:mt-8 lg:mt-12">
+        <div className="flex items-start mt-6 sm:mt-8 lg:mt-12 mb-6">
           <span className="text-base sm:text-lg lg:text-2xl font-medium tracking-widest">
             Services
           </span>
