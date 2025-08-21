@@ -3,6 +3,7 @@ import GetConsultation from "@/components/Landing/GetConsultation/GetConsultatio
 import GetInTouch from "@/components/Landing/GetInTouch/GetInTouch";
 import Hero from "@/components/Landing/Hero/Hero";
 import Services from "@/components/Landing/Services/Services";
+import Footer from "@/components/Layout/Footer/Footer";
 import NavBar from "@/components/Layout/NavBar/NavBar";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Contact />
       <GetConsultation />
       <GetInTouch />
+      <Footer />
     </>
   );
 }
