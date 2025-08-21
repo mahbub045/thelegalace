@@ -24,12 +24,16 @@ export const metadata: Metadata = {
   title: "The Legal Ace",
   description: "Your trusted partner in legal matters",
   keywords: [
+    "the legal ace",
+    "thelegalace",
+    "The legal ace",
+    "The Legal ace",
+    "The Legal Ace",
     "law firm",
     "legal services",
     "corporate law",
     "criminal defense",
     "family law",
-    "the legal ace",
   ],
   authors: [{ name: "The Legal Ace", url: "https://thelegalace.com" }],
   openGraph: {
