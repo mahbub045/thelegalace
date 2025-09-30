@@ -30,6 +30,25 @@ const Banner: React.FC<ServicesBannerProps> = ({
             <div className="absolute right-1/3 bottom-1/3 h-1 w-1 animate-pulse rounded-full bg-white delay-300"></div>
             <div className="absolute top-1/2 left-1/6 h-1 w-1 animate-pulse rounded-full bg-white delay-500"></div>
             <div className="absolute bottom-20 left-1/3 h-1 w-1 animate-pulse rounded-full bg-white delay-700"></div>
+
+            {/* Additional stars */}
+            <div className="absolute top-16 left-1/2 h-1 w-1 animate-pulse rounded-full bg-white delay-100"></div>
+            <div className="absolute top-32 left-3/4 h-1 w-1 animate-pulse rounded-full bg-white delay-200"></div>
+            <div className="absolute top-2/3 right-1/4 h-1 w-1 animate-pulse rounded-full bg-white delay-400"></div>
+            <div className="absolute bottom-1/4 left-1/5 h-1 w-1 animate-pulse rounded-full bg-white delay-600"></div>
+            <div className="absolute top-3/4 right-1/6 h-1 w-1 animate-pulse rounded-full bg-white delay-800"></div>
+            <div className="absolute right-1/2 bottom-32 h-1 w-1 animate-pulse rounded-full bg-white delay-1000"></div>
+            <div className="absolute top-1/4 right-1/5 h-1 w-1 animate-pulse rounded-full bg-white delay-300"></div>
+            <div className="absolute bottom-1/2 left-2/3 h-1 w-1 animate-pulse rounded-full bg-white delay-900"></div>
+            <div className="absolute top-40 right-1/3 h-1 w-1 animate-pulse rounded-full bg-white delay-450"></div>
+            <div className="absolute bottom-40 left-1/2 h-1 w-1 animate-pulse rounded-full bg-white delay-650"></div>
+
+            {/* Smaller twinkling stars */}
+            <div className="absolute top-24 left-1/3 h-0.5 w-0.5 animate-pulse rounded-full bg-white/60 delay-350"></div>
+            <div className="absolute top-1/5 right-1/4 h-0.5 w-0.5 animate-pulse rounded-full bg-white/60 delay-750"></div>
+            <div className="absolute right-1/3 bottom-1/5 h-0.5 w-0.5 animate-pulse rounded-full bg-white/60 delay-550"></div>
+            <div className="absolute top-3/5 left-1/4 h-0.5 w-0.5 animate-pulse rounded-full bg-white/60 delay-850"></div>
+            <div className="absolute bottom-1/6 left-3/4 h-0.5 w-0.5 animate-pulse rounded-full bg-white/60 delay-250"></div>
           </div>
         </div>
       </div>
@@ -55,7 +74,7 @@ const Banner: React.FC<ServicesBannerProps> = ({
         </h1>
 
         {/* Subtitle */}
-        <p className="mx-auto mb-12 max-w-4xl text-lg leading-relaxed font-light text-white/95 drop-shadow-lg sm:text-xl md:text-2xl">
+        <p className="font-outfit mx-auto mb-12 max-w-4xl text-lg leading-relaxed font-light text-white/95 drop-shadow-lg sm:text-xl md:text-2xl">
           {subtitle}
         </p>
 
