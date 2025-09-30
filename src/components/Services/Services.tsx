@@ -1,4 +1,5 @@
 import Banner from "./Components/Banner";
+import GetConsultancy from "./Components/GetConsultancy";
 import ServiceCard from "./Components/ServiceCard";
 
 const Services: React.FC = () => {
@@ -6,6 +7,7 @@ const Services: React.FC = () => {
     <div>
       <Banner />
       <ServiceCard />
+      <GetConsultancy />
     </div>
   );
 };

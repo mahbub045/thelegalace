@@ -43,7 +43,7 @@ const ServiceCard: React.FC = () => {
       {cardsData.map((card) => (
         <div
           key={card.id}
-          className="hover:shadow-secondary/20 relative overflow-hidden rounded-xl transition-all duration-500 hover:shadow-2xl sm:rounded-2xl"
+          className="hover:shadow-secondary/20 relative overflow-hidden transition-all duration-500 hover:shadow-2xl"
         >
           <div className="flex flex-col lg:flex-row">
             {/* Image Section */}

@@ -33,7 +33,7 @@ const Services: React.FC = () => {
         <h1 className="text-3xl leading-tight font-bold sm:text-4xl md:text-5xl lg:text-6xl">
           EXCEPTIONAL
           <br />
-          <span className="text-teal-400">ELITE ADVOCACY</span>
+          ELITE ADVOCACY
         </h1>
       </div>
 
