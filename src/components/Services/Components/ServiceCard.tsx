@@ -39,15 +39,15 @@ const ServiceCard: React.FC = () => {
   ];
 
   return (
-    <div className="grid gap-8 p-20 md:gap-12">
+    <div className="grid gap-6 p-4 sm:gap-8 sm:p-8 md:gap-12 md:p-12 lg:p-20">
       {cardsData.map((card) => (
         <div
           key={card.id}
-          className="hover:shadow-secondary/20 relative overflow-hidden transition-all duration-500 hover:shadow-2xl"
+          className="hover:shadow-secondary/20 relative overflow-hidden rounded-xl transition-all duration-500 hover:shadow-2xl sm:rounded-2xl"
         >
           <div className="flex flex-col lg:flex-row">
             {/* Image Section */}
-            <div className="group relative h-80 cursor-pointer overflow-hidden lg:h-96 lg:w-1/2">
+            <div className="group relative h-60 cursor-pointer overflow-hidden sm:h-72 md:h-80 lg:h-96 lg:w-1/2">
               <Image
                 src={card.image}
                 alt={card.title}
@@ -67,20 +67,22 @@ const ServiceCard: React.FC = () => {
             </div>
 
             {/* Content Section */}
-            <div className="flex flex-1 flex-col justify-center p-8 lg:p-12">
-              <h3 className="text-secondary mb-4 text-2xl font-bold tracking-wide lg:mb-6 lg:text-3xl xl:text-4xl">
+            <div className="flex flex-1 flex-col justify-center p-4 sm:p-6 md:p-8 lg:p-12">
+              <h3 className="text-secondary mb-3 text-xl font-bold tracking-wide sm:mb-4 sm:text-2xl lg:mb-6 lg:text-3xl xl:text-4xl">
                 {card.title}
               </h3>
 
-              <p className="font-outfit mb-6 text-base leading-relaxed font-light text-white/90 lg:mb-8 lg:text-lg">
+              <p className="font-outfit mb-4 text-sm leading-relaxed font-light text-white/90 sm:mb-6 sm:text-base lg:mb-8 lg:text-lg">
                 {card.description}
               </p>
 
               {/* Service Button */}
               <Link href={card.href}>
-                <button className="bg-secondary/10 hover:bg-secondary/20 border-secondary/30 hover:border-secondary text-secondary inline-flex cursor-pointer items-center gap-3 rounded-md border px-6 py-3 backdrop-blur-sm transition-all duration-300 hover:translate-x-2 hover:text-white">
-                  <span className="font-medium tracking-wide">Service</span>
-                  <ArrowRight className="h-4 w-4 transition-transform duration-300 hover:translate-x-1" />
+                <button className="bg-secondary/10 hover:bg-secondary/20 border-secondary/30 hover:border-secondary text-secondary inline-flex cursor-pointer items-center gap-2 rounded-md border px-4 py-2 backdrop-blur-sm transition-all duration-300 hover:translate-x-2 hover:text-white sm:gap-3 sm:px-6 sm:py-3">
+                  <span className="text-sm font-medium tracking-wide sm:text-base">
+                    Service
+                  </span>
+                  <ArrowRight className="h-3 w-3 transition-transform duration-300 hover:translate-x-1 sm:h-4 sm:w-4" />
                 </button>
               </Link>
             </div>
