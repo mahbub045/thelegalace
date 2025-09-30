@@ -7,22 +7,22 @@ const Services: React.FC = () => {
     {
       id: 1,
       title: "CORPORATE LAW",
-      image: "/images/services/CLaw.png",
+      image: "/images/home/services/CLaw.png",
     },
     {
       id: 2,
       title: "REAL ESTATE LAW",
-      image: "/images/services/RELaw.png",
+      image: "/images/home/services/RELaw.png",
     },
     {
       id: 3,
       title: "EMPLOYMENT LAW",
-      image: "/images/services/ELaw.png",
+      image: "/images/home/services/ELaw.png",
     },
     {
       id: 4,
       title: "ENVIRONMENTAL LAW",
-      image: "/images/services/EVLaw.png",
+      image: "/images/home/services/EVLaw.png",
     },
   ];
 
