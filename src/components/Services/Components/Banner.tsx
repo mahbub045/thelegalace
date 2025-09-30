@@ -57,12 +57,12 @@ const Banner: React.FC<ServicesBannerProps> = ({
       <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
         {/* Gavel/Scales Image positioned above text */}
         <div className="mb-8 flex justify-center">
-          <div className="relative mt-3 h-48 w-64 overflow-hidden rounded-2xl sm:h-60 sm:w-80 md:h-72 md:w-96">
+          <div className="group relative mt-3 h-48 w-64 overflow-hidden rounded-2xl sm:h-60 sm:w-80 md:h-72 md:w-96">
             <Image
               src={attorneyImage}
               alt="Legal scales and gavel"
               fill
-              className="rounded-2xl object-contain"
+              className="rounded-2xl object-contain transition-transform duration-300 ease-in-out group-hover:scale-105"
               priority
             />
           </div>
