@@ -1,5 +1,4 @@
 "use client";
-
 import { Handbag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,12 +6,12 @@ import React, { useEffect, useState } from "react";
 
 const NavBar: React.FC = () => {
   const navItems = [
-    "Template",
-    "Practice Areas",
-    "Company",
-    "Blog",
-    "Store",
-    "Contact",
+    { name: "Home", href: "/" },
+    { name: "Practice Areas", href: "/services" },
+    { name: "Company", href: "/about" },
+    { name: "Blog", href: "/blog" },
+    { name: "Store", href: "/store" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const [scrolled, setScrolled] = useState(false);
@@ -51,11 +50,11 @@ const NavBar: React.FC = () => {
           <nav className="hidden lg:flex gap-8 items-center">
             {navItems.map((item) => (
               <Link
-                key={item}
-                href="#"
+                key={item.name}
+                href={item.href}
                 className="font-outfit font-bold text-sm text-secondary/70 hover:text-secondary/90 uppercase tracking-widest"
               >
-                {item}
+                {item.name}
               </Link>
             ))}
           </nav>
@@ -102,12 +101,12 @@ const NavBar: React.FC = () => {
                   </button>
                   {navItems.map((item) => (
                     <Link
-                      key={item}
-                      href="#"
+                      key={item.name}
+                      href={item.href}
                       className="font-outfit font-bold text-base text-white uppercase tracking-widest"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {item}
+                      {item.name}
                     </Link>
                   ))}
                 </nav>
