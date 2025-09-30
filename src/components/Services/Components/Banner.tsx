@@ -18,10 +18,10 @@ const Banner: React.FC<ServicesBannerProps> = ({
   attorneyImage = "/images/services/attorney-professional.jpg",
 }) => {
   return (
-    <section className="relative flex h-screen items-center justify-center overflow-hidden">
+    <section className="relative mt-14 flex items-center justify-center overflow-hidden sm:mt-16 md:mt-18 lg:mt-20">
       {/* Dark starry background */}
       <div className="absolute inset-0 -z-20">
-        <div className="h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+        <div className="from-primary/80 via-primary/60 to-primary/80 h-full w-full bg-gradient-to-br">
           {/* Starry effect */}
           <div className="absolute inset-0 opacity-30">
             <div className="absolute top-10 left-10 h-1 w-1 animate-pulse rounded-full bg-white"></div>
@@ -81,7 +81,7 @@ const Banner: React.FC<ServicesBannerProps> = ({
         {/* Discover Button */}
         <button
           onClick={onButtonClick}
-          className="group text-secondary hover:text-secondary/80 inline-flex transform flex-col items-center gap-4"
+          className="group text-secondary hover:text-secondary/80 mb-8 inline-flex transform flex-col items-center gap-1"
         >
           <span className="text-xl font-medium tracking-wider drop-shadow-lg sm:text-2xl">
             {buttonText}
