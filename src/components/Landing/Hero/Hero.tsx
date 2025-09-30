@@ -5,10 +5,10 @@ import React, { useEffect, useState } from "react";
 const Hero: React.FC = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "/images/hero/heroimg1.png",
-    "/images/hero/heroimg2.png",
-    "/images/hero/heroimg3.png",
-    "/images/hero/heroimg4.png",
+    "/images/landingpage/hero/heroimg1.png",
+    "/images/landingpage/hero/heroimg2.png",
+    "/images/landingpage/hero/heroimg3.png",
+    "/images/landingpage/hero/heroimg4.png",
   ];
 
   useEffect(() => {

@@ -5,7 +5,7 @@ const Contact: React.FC = () => {
   const ourGoals = [
     {
       id: "mission",
-      image: "/images/contact/mission.png",
+      image: "/images/landingpage/contact/mission.png",
       alt: "Mission - Legal professionals in discussion",
       title: "Our Mission",
       description:
@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
     },
     {
       id: "vision",
-      image: "/images/contact/vision.png",
+      image: "/images/landingpage/contact/vision.png",
       alt: "Vision - Modern law office with city view",
       title: "Our Vision",
       description:
@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
     },
     {
       id: "values",
-      image: "/images/contact/values.png",
+      image: "/images/landingpage/contact/values.png",
       alt: "Values - Team collaboration and ethics",
       title: "Our Values",
       description:
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 sm:mt-12 md:mt-16 lg:mt-20">
               <div className="relative order-2 sm:order-1">
                 <Image
-                  src="/images/contact/law-office.png"
+                  src="/images/landingpage/contact/law-office.png"
                   alt="Elegant law office interior with wooden furniture and warm lighting"
                   width={500}
                   height={300}
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
       {/* law library */}
       <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden mb-8 sm:mb-12 md:mb-16">
         <Image
-          src="/images/contact/law-library.png"
+          src="/images/landingpage/contact/law-library.png"
           alt="Elegant law library with wooden shelves and warm lighting"
           className="object-cover w-full h-full shadow-2xl"
           width={1200}

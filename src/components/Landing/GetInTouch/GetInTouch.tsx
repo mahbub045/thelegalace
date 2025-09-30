@@ -6,19 +6,19 @@ const GetInTouch: React.FC = () => {
   const items = [
     {
       id: "services",
-      image: "/images/getintouch/services.png",
+      image: "/images/landingpage/getintouch/services.png",
       title: "Services: Our practice areas",
       href: "/services",
     },
     {
       id: "company",
-      image: "/images/getintouch/company.png",
+      image: "/images/landingpage/getintouch/company.png",
       title: "Company: About us",
       href: "/about",
     },
     {
       id: "contact",
-      image: "/images/getintouch/contact.png",
+      image: "/images/landingpage/getintouch/contact.png",
       title: "Contact: Get in touch",
       href: "/contact",
     },

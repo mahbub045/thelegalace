@@ -53,7 +53,7 @@ const Services: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-6 mb-6 sm:mb-8">
             <div className="flex-1">
               <Image
-                src="/images/services/ServicesImg1.png"
+                src="/images/landingpage/services/ServicesImg1.png"
                 alt="Elegant courtroom interior with wooden furniture and warm lighting"
                 className="rounded-md object-cover w-full h-40 sm:h-48 md:h-64 lg:h-80"
                 width={300}
@@ -62,7 +62,7 @@ const Services: React.FC = () => {
             </div>
             <div className="flex-1">
               <Image
-                src="/images/services/ServicesImg2.png"
+                src="/images/landingpage/services/ServicesImg2.png"
                 alt="Elegant courtroom interior with wooden furniture and warm lighting"
                 className="rounded-md object-cover w-full h-40 sm:h-48 md:h-64 lg:h-80"
                 width={300}
