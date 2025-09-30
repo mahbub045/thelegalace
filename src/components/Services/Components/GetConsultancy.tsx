@@ -149,11 +149,11 @@ const GetConsultancy: React.FC = () => {
                   name="privacyPolicy"
                   checked={formData.privacyPolicy}
                   onChange={handleInputChange}
-                  className="text-secondary focus:ring-secondary mt-1 h-4 w-4 rounded border border-white/30 bg-transparent focus:ring-2"
+                  className="text-secondary focus:ring-secondary mt-1 h-4 w-4 cursor-pointer rounded border border-white/30 bg-transparent focus:ring-2"
                 />
                 <label
                   htmlFor="privacyPolicy"
-                  className="text-sm leading-relaxed text-white/70"
+                  className="cursor-pointer text-sm leading-relaxed text-white/70"
                 >
                   I agree to the privacy policy
                 </label>
@@ -162,7 +162,7 @@ const GetConsultancy: React.FC = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="bg-secondary hover:bg-secondary/90 mt-8 inline-flex cursor-pointer items-center gap-3 rounded-md px-8 py-4 font-semibold text-slate-900 transition-all duration-300 hover:translate-x-2"
+                className="bg-secondary hover:bg-secondary/90 mt-4 inline-flex cursor-pointer items-center gap-3 rounded-md px-8 py-4 font-semibold text-slate-900 transition-all duration-300 hover:translate-x-2"
               >
                 <span className="tracking-wide">SEND FORM</span>
                 <ArrowRight className="h-5 w-5" />
