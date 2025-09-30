@@ -62,12 +62,12 @@ const Banner: React.FC<ServicesBannerProps> = ({
         {/* Discover Button */}
         <button
           onClick={onButtonClick}
-          className="group text-secondary hover:text-secondary/80 inline-flex transform flex-col items-center gap-4 transition-all duration-300 hover:scale-105"
+          className="group text-secondary hover:text-secondary/80 inline-flex transform flex-col items-center gap-4"
         >
           <span className="text-xl font-medium tracking-wider drop-shadow-lg sm:text-2xl">
             {buttonText}
           </span>
-          <div className="bg-secondary/80 h-8 w-px" />
+          <div className="bg-secondary/80 h-8 w-px transition-all duration-300 hover:scale-105" />
           <ChevronDown className="h-6 w-6 drop-shadow-lg transition-transform duration-300 group-hover:translate-y-2 sm:h-8 sm:w-8" />
         </button>
       </div>
