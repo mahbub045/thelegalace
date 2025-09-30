@@ -15,53 +15,60 @@ const Banner: React.FC<ServicesBannerProps> = ({
   subtitle = "Our team of experienced attorneys is equipped to handle everything from corporate law to environmental disputes.",
   buttonText = "Discover",
   onButtonClick,
-  backgroundImage = "/images/services/banner-bg.jpg",
   attorneyImage = "/images/services/attorney-professional.jpg",
 }) => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Dark starry background */}
       <div className="absolute inset-0 -z-20">
-        <div className="w-full h-full bg-gradient-to-br from-primary via-primary/95 to-primary/90" />
-      </div>
-
-      {/* Attorney Image - Positioned in upper portion */}
-      <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -z-10">
-        <div className="relative w-80 h-96 sm:w-96 sm:h-[450px] rounded-lg overflow-hidden">
-          <Image
-            src={attorneyImage}
-            alt="Professional attorney in office"
-            fill
-            className="object-cover"
-            priority
-          />
-          {/* Subtle overlay to blend with background */}
-          <div className="absolute inset-0 bg-primary/20" />
+        <div className="w-full h-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+          {/* Starry effect */}
+          <div className="absolute inset-0 opacity-30">
+            <div className="absolute top-10 left-10 w-1 h-1 bg-white rounded-full animate-pulse"></div>
+            <div className="absolute top-20 right-20 w-1 h-1 bg-white rounded-full animate-pulse delay-75"></div>
+            <div className="absolute top-1/3 left-1/4 w-1 h-1 bg-white rounded-full animate-pulse delay-150"></div>
+            <div className="absolute bottom-1/3 right-1/3 w-1 h-1 bg-white rounded-full animate-pulse delay-300"></div>
+            <div className="absolute top-1/2 left-1/6 w-1 h-1 bg-white rounded-full animate-pulse delay-500"></div>
+            <div className="absolute bottom-20 left-1/3 w-1 h-1 bg-white rounded-full animate-pulse delay-700"></div>
+          </div>
         </div>
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
-        {/* Main Title */}
-        <h1 className="text-8xl sm:text-9xl md:text-[12rem] lg:text-[14rem] font-bold text-white leading-none mb-8 tracking-wider">
+        {/* Gavel/Scales Image positioned above text */}
+        <div className="flex justify-center mb-8">
+          <div className="relative mt-3 w-64 h-48 sm:w-80 sm:h-60 md:w-96 md:h-72 rounded-2xl overflow-hidden">
+            <Image
+              src={attorneyImage}
+              alt="Legal scales and gavel"
+              fill
+              className="object-contain rounded-2xl"
+              priority
+            />
+          </div>
+        </div>
+
+        {/* Main Title positioned below image */}
+        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-bold text-white leading-none mb-8 tracking-[0.1em] drop-shadow-2xl">
           {title}
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl sm:text-2xl md:text-3xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-12 font-light">
+        <p className="text-lg sm:text-xl md:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed mb-12 font-light drop-shadow-lg">
           {subtitle}
         </p>
 
         {/* Discover Button */}
         <button
           onClick={onButtonClick}
-          className="group inline-flex flex-col items-center gap-3 text-secondary hover:text-secondary/80 transition-colors duration-300"
+          className="group inline-flex flex-col items-center gap-4 text-secondary hover:text-secondary/80 transition-all duration-300 transform hover:scale-105"
         >
-          <span className="text-xl sm:text-2xl font-medium tracking-wider">
+          <span className="text-xl sm:text-2xl font-medium tracking-wider drop-shadow-lg">
             {buttonText}
           </span>
-          <div className="w-px h-8 bg-secondary/60" />
-          <ChevronDown className="w-6 h-6 sm:w-8 sm:h-8 group-hover:translate-y-1 transition-transform duration-300" />
+          <div className="w-px h-8 bg-secondary/80" />
+          <ChevronDown className="w-6 h-6 sm:w-8 sm:h-8 group-hover:translate-y-2 transition-transform duration-300 drop-shadow-lg" />
         </button>
       </div>
 
