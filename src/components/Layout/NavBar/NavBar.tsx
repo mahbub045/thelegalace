@@ -2,6 +2,7 @@
 import { Handbag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 const NavBar: React.FC = () => {
@@ -16,6 +17,14 @@ const NavBar: React.FC = () => {
 
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(href);
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -28,15 +37,15 @@ const NavBar: React.FC = () => {
   }, []);
 
   return (
-    <header className="w-full fixed top-0 z-50 transition-colors duration-300">
+    <header className="fixed top-0 z-50 w-full transition-colors duration-300">
       <div
         className={
           scrolled
-            ? "backdrop-blur-sm bg-[#0b232b]/70 border-b border-[#06303a]/30 shadow-md"
+            ? "border-b border-[#06303a]/30 bg-[#0b232b]/70 shadow-md backdrop-blur-sm"
             : "bg-transparent"
         }
       >
-        <div className="mx-auto px-6 py-4 flex items-center justify-between transition-all duration-300">
+        <div className="mx-auto flex items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo.png"
@@ -47,12 +56,14 @@ const NavBar: React.FC = () => {
             />
           </Link>
 
-          <nav className="hidden lg:flex gap-8 items-center">
+          <nav className="hidden items-center gap-8 lg:flex">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="font-outfit font-bold text-sm text-secondary/70 hover:text-secondary/90 uppercase tracking-widest"
+                className={`font-outfit text-secondary text-hover text-sm font-bold tracking-widest uppercase ${
+                  isActive(item.href) ? "active" : ""
+                }`}
               >
                 {item.name}
               </Link>
@@ -63,14 +74,14 @@ const NavBar: React.FC = () => {
             {/* Cart button */}
             <button
               type="button"
-              className="me-2 text-center text-white/90 hover:text-white hover:cursor-pointer"
+              className="me-2 text-center text-white/90 hover:cursor-pointer hover:text-white"
             >
               <Handbag />
             </button>
 
             <button
               type="button"
-              className="lg:hidden p-2 rounded font-outfit bg-white/6 text-white/90 hover:bg-white/10"
+              className="font-outfit rounded bg-white/6 p-2 text-white/90 hover:bg-white/10 lg:hidden"
               aria-label="Open menu"
               onClick={() => setMobileMenuOpen((prev) => !prev)}
             >
@@ -79,7 +90,7 @@ const NavBar: React.FC = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="h-6 w-6"
               >
                 <path
                   strokeLinecap="round"
@@ -91,9 +102,9 @@ const NavBar: React.FC = () => {
             </button>
             <div>
               {mobileMenuOpen && (
-                <nav className="fixed inset-0 z-50 bg-[#0b232b]/95 flex flex-col items-center justify-center gap-8 md:hidden">
+                <nav className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-8 bg-[#0b232b]/95 md:hidden">
                   <button
-                    className="absolute top-4 right-7 text-white text-6xl"
+                    className="absolute top-4 right-7 text-6xl text-white"
                     aria-label="Close menu"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -103,7 +114,9 @@ const NavBar: React.FC = () => {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="font-outfit font-bold text-base text-white uppercase tracking-widest"
+                      className={`font-outfit text-hover text-base font-bold tracking-widest text-white uppercase ${
+                        isActive(item.href) ? "active" : ""
+                      }`}
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
