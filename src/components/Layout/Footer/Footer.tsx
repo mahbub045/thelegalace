@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer: React.FC = () => {
   const menuItems = [
@@ -11,6 +12,14 @@ const Footer: React.FC = () => {
     { label: "Store", href: "/store" },
     { label: "Contact", href: "/contact" },
   ];
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <footer className="text-white">
@@ -34,7 +43,9 @@ const Footer: React.FC = () => {
                 <li key={index}>
                   <Link
                     href={item?.href}
-                    className="font-outfit block text-center text-white/90 transition-colors duration-200 hover:underline"
+                    className={`font-outfit text-hover block text-center text-white/90 ${
+                      isActive(item?.href) ? "active" : ""
+                    }`}
                   >
                     {item?.label.toUpperCase()}
                   </Link>
