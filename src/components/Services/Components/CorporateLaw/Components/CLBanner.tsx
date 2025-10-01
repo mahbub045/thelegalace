@@ -28,7 +28,7 @@ const CLBanner: React.FC<CLBannerProps> = ({
           priority
         />
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-900/80" />
+        <div className="from-primary/80 via-primary/70 to-primary/80 absolute inset-0 bg-gradient-to-br" />
       </div>
 
       {/* Content Container */}
@@ -46,18 +46,19 @@ const CLBanner: React.FC<CLBannerProps> = ({
         </div>
 
         {/* Subtitle */}
-        <p className="mx-auto mb-12 max-w-4xl text-lg leading-relaxed font-light text-white/95 drop-shadow-lg sm:text-xl md:text-2xl">
+        <p className="font-outfit mx-auto mb-8 max-w-4xl text-lg leading-relaxed font-light text-white/95 drop-shadow-lg sm:text-xl md:text-2xl">
           {subtitle}
         </p>
 
         {/* Discover Button */}
         <button
           onClick={onButtonClick}
-          className="group text-secondary hover:text-secondary/80 inline-flex transform flex-col items-center gap-4 transition-all duration-300 hover:scale-105"
+          className="group text-secondary hover:text-secondary/80 mb-8 inline-flex transform flex-col items-center gap-1"
         >
-          <span className="bg-secondary/10 hover:bg-secondary/20 border-secondary/30 hover:border-secondary rounded-full border px-8 py-3 text-xl font-medium tracking-wider drop-shadow-lg transition-all duration-300 sm:text-2xl">
+          <span className="text-xl font-medium tracking-wider drop-shadow-lg sm:text-2xl">
             {buttonText}
           </span>
+          <div className="bg-secondary/80 h-8 w-px transition-all duration-300 hover:scale-105" />
           <ChevronDown className="h-6 w-6 drop-shadow-lg transition-transform duration-300 group-hover:translate-y-2 sm:h-8 sm:w-8" />
         </button>
       </div>
