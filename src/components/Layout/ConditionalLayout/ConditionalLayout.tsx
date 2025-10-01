@@ -3,6 +3,7 @@
 import Footer from "@/components/Layout/Footer/Footer";
 import NavBar from "@/components/Layout/NavBar/NavBar";
 import { useEffect, useState } from "react";
+import TapTop from "../TapTop/TapTop";
 
 interface ConditionalLayoutProps {
   children: React.ReactNode;
@@ -36,6 +37,7 @@ const ConditionalLayout: React.FC<ConditionalLayoutProps> = ({ children }) => {
   return (
     <>
       <NavBar />
+      <TapTop />
       <main>{children}</main>
       <Footer />
     </>
