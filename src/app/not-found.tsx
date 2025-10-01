@@ -18,7 +18,7 @@ export default function NotFound() {
   return (
     <div
       data-not-found="true"
-      className="min-h-screen bg-gradient-to-br from-primary via-primary/95 to-primary/90 flex items-center justify-center px-4"
+      className="min-h-screen bg-gradient-to-br from-primary/50 via-primary/40 to-primary/50 flex items-center justify-center px-4"
     >
       <div className="max-w-2xl mx-auto text-center text-white">
         {/* 404 Large Text */}
