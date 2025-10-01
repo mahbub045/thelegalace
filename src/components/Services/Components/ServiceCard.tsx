@@ -78,11 +78,11 @@ const ServiceCard: React.FC = () => {
 
               {/* Service Button */}
               <Link href={card.href}>
-                <button className="bg-secondary/10 hover:bg-secondary/20 border-secondary/30 hover:border-secondary text-secondary inline-flex cursor-pointer items-center gap-2 rounded-md border px-4 py-2 backdrop-blur-sm transition-all duration-300 hover:translate-x-2 hover:text-white sm:gap-3 sm:px-6 sm:py-3">
+                <button className="group bg-secondary/10 hover:bg-secondary/20 border-secondary/30 hover:border-secondary text-secondary inline-flex cursor-pointer items-center gap-2 rounded-md border px-4 py-2 backdrop-blur-sm duration-300 hover:text-white sm:gap-3 sm:px-6 sm:py-3">
                   <span className="text-sm font-medium tracking-wide sm:text-base">
                     Service
                   </span>
-                  <ArrowRight className="h-3 w-3 transition-transform duration-300 hover:translate-x-1 sm:h-4 sm:w-4" />
+                  <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-2 sm:h-4 sm:w-4" />
                 </button>
               </Link>
             </div>

@@ -162,10 +162,10 @@ const GetConsultancy: React.FC = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="bg-secondary hover:bg-secondary/90 mt-4 inline-flex cursor-pointer items-center gap-3 rounded-md px-8 py-4 font-semibold text-slate-900 transition-all duration-300 hover:translate-x-2"
+                className="group bg-secondary hover:bg-secondary/90 mt-4 inline-flex cursor-pointer items-center gap-3 rounded-md px-8 py-4 font-semibold text-slate-900"
               >
                 <span className="tracking-wide">SEND FORM</span>
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-2" />
               </button>
             </form>
           </div>

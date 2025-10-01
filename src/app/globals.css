@@ -68,3 +68,33 @@ body {
 .text-hover.active::after {
   width: 100%;
 }
+
+/* tap-top */
+.tap-top {
+  text-align: center !important;
+  cursor: pointer;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 5;
+  color: #ffffff;
+  background: var(--secondary);
+  border: none;
+  padding: 7px;
+  box-shadow: 0 0 10px var(--secondary);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+
+  span {
+    line-height: 1.9;
+  }
+}
