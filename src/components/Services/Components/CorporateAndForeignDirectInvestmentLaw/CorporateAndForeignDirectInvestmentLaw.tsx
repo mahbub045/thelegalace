@@ -1,12 +1,10 @@
-"use client";
-
 import AdditionalServices from "../CommonComponents/AdditionalServices";
 import GetConsultancy from "../CommonComponents/GetConsultancy";
 import CLAbout from "./Components/CLAbout";
 import CLBanner from "./Components/CLBanner";
 import Testimonial from "./Components/Testimonial";
 
-const CorporateLaw: React.FC = () => {
+const CorporateAndForeignDirectInvestmentLaw: React.FC = () => {
   return (
     <>
       <CLBanner />
@@ -18,4 +16,4 @@ const CorporateLaw: React.FC = () => {
   );
 };
 
-export default CorporateLaw;
+export default CorporateAndForeignDirectInvestmentLaw;

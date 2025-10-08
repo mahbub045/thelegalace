@@ -6,11 +6,11 @@ const ServiceCard: React.FC = () => {
   const cardsData = [
     {
       id: 1,
-      title: "CORPORATE LAW",
+      title: "Corporate & Foreign Direct Investment Law",
       image: "/images/services/CLaw.avif",
       description:
         "Business formation, governance, M&A, and regulatory advice for corporate clients.",
-      href: "/services/corporate-law",
+      href: "/services/corporate-and-foreign-direct-nvestment-law",
     },
     {
       id: 2,
