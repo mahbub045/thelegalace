@@ -1,5 +1,6 @@
 "use client";
 
+import AdditionalServices from "../CommonComponents/AdditionalServices";
 import GetConsultancy from "../CommonComponents/GetConsultancy";
 import CLAbout from "./Components/CLAbout";
 import CLBanner from "./Components/CLBanner";
@@ -12,6 +13,7 @@ const CorporateLaw: React.FC = () => {
       <CLAbout />
       <GetConsultancy />
       <Testimonial />
+      <AdditionalServices />
     </>
   );
 };
