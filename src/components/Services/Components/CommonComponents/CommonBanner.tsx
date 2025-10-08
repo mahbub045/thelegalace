@@ -28,7 +28,7 @@ const CommonBanner: React.FC<CLBannerProps> = ({
           priority
         />
         {/* Dark overlay for text readability */}
-        <div className="from-primary/80 via-primary/70 to-primary/80 absolute inset-0 bg-gradient-to-br" />
+        <div className="from-primary/50 via-primary/40 to-primary/50 absolute inset-0 bg-gradient-to-br" />
       </div>
 
       {/* Content Container */}

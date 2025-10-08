@@ -55,7 +55,7 @@ const Services: React.FC = () => {
               <Image
                 src="/images/home/services/ServicesImg1.png"
                 alt="Elegant courtroom interior with wooden furniture and warm lighting"
-                className="h-40 w-full rounded-md object-cover sm:h-48 md:h-64 lg:h-80"
+                className="h-40 w-full rounded-md object-cover transition-transform duration-500 hover:scale-105 sm:h-48 md:h-64 lg:h-80"
                 width={300}
                 height={320}
               />
@@ -64,7 +64,7 @@ const Services: React.FC = () => {
               <Image
                 src="/images/home/services/ServicesImg2.png"
                 alt="Elegant courtroom interior with wooden furniture and warm lighting"
-                className="h-40 w-full rounded-md object-cover sm:h-48 md:h-64 lg:h-80"
+                className="h-40 w-full rounded-md object-cover transition-transform duration-500 hover:scale-105 sm:h-48 md:h-64 lg:h-80"
                 width={300}
                 height={320}
               />
@@ -84,7 +84,7 @@ const Services: React.FC = () => {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="group border-secondary/50 flex cursor-pointer items-center justify-between rounded-md border bg-slate-800/30 p-4 transition-all duration-300 hover:bg-slate-700/40 sm:p-6"
+                className="group border-secondary/50 flex cursor-pointer items-center justify-between rounded-md border bg-slate-800/30 p-4 transition-all duration-500 hover:scale-102 hover:bg-slate-700/40 sm:p-6"
               >
                 <div className="flex min-w-0 flex-1 items-center space-x-3 sm:space-x-4 md:space-x-6">
                   {/* Service Image */}
@@ -116,9 +116,9 @@ const Services: React.FC = () => {
       <div className="flex flex-col gap-4 sm:flex-row">
         <div className="relative flex-1 sm:max-w-[30%]">
           <Image
-            src="/images/services/supremecourt.png"
+            src="/images/home/services/supremecourt.png"
             alt="Elegant courtroom interior with wooden furniture and warm lighting"
-            className="h-40 w-full rounded-md object-cover sm:h-48 md:h-64"
+            className="h-40 w-full rounded-md object-cover transition-transform duration-500 hover:scale-101 sm:h-48 md:h-64"
             width={400}
             height={200}
           />
@@ -127,9 +127,9 @@ const Services: React.FC = () => {
         </div>
         <div className="flex-1 sm:flex-[3]">
           <Image
-            src="/images/services/Courtroom.png"
+            src="/images/home/services/Courtroom.png"
             alt="Elegant courtroom interior with wooden furniture and warm lighting"
-            className="h-40 w-full rounded-md object-cover sm:h-48 md:h-64 lg:h-[600px]"
+            className="h-40 w-full rounded-md object-cover transition-transform duration-500 hover:scale-101 sm:h-48 md:h-64 lg:h-[600px]"
             width={900}
             height={600}
           />
