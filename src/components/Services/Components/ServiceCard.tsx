@@ -1,56 +1,22 @@
+import { servicesData } from "@/data/ServicesData";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const ServiceCard: React.FC = () => {
-  const cardsData = [
-    {
-      id: 1,
-      title: "Corporate & Foreign Direct Investment",
-      image: "/images/services/CFD.avif",
-      description:
-        "Business formation, governance, M&A, and regulatory advice for corporate clients.",
-      href: "/services/corporate-and-foreign-direct-investment",
-    },
-    {
-      id: 2,
-      title: "Taxation & VAT",
-      image: "/images/services/TV.avif",
-      description:
-        "Tax planning, compliance, and dispute resolution for businesses.",
-      href: "/services/taxation-and-vat",
-    },
-    {
-      id: 3,
-      title: "Banking and Financial Matters",
-      image: "/images/services/BFM.avif",
-      description:
-        "Advising on banking regulations, compliance, and financial transactions.",
-      href: "/services/banking-and-financial-matters",
-    },
-    {
-      id: 4,
-      title: "Business Setup in Bangladesh",
-      image: "/images/services/BSB.avif",
-      description:
-        "Expert legal guidance for setting up and operating a business in Bangladesh.",
-      href: "/services/business-setup-in-bangladesh",
-    },
-  ];
-
   return (
     <div className="grid gap-6 p-4 sm:gap-8 sm:p-8 md:gap-12 md:p-12 lg:p-20">
-      {cardsData.map((card) => (
+      {servicesData.map((service) => (
         <div
-          key={card.id}
+          key={service.id}
           className="hover:shadow-secondary/20 relative overflow-hidden transition-all duration-500 hover:shadow-2xl"
         >
           <div className="flex flex-col lg:flex-row">
             {/* Image Section */}
             <div className="group relative h-60 cursor-pointer overflow-hidden sm:h-72 md:h-80 lg:h-96 lg:w-1/2">
               <Image
-                src={card.image}
-                alt={card.title}
+                src={service.image}
+                alt={service.title}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                 priority
@@ -69,15 +35,15 @@ const ServiceCard: React.FC = () => {
             {/* Content Section */}
             <div className="flex flex-1 flex-col justify-center p-4 sm:p-6 md:p-8 lg:p-12">
               <h3 className="text-secondary mb-3 text-xl font-bold tracking-wide sm:mb-4 sm:text-2xl lg:mb-6 lg:text-3xl xl:text-4xl">
-                {card.title}
+                {service.title}
               </h3>
 
               <p className="font-outfit mb-4 text-sm leading-relaxed font-light text-white/90 sm:mb-6 sm:text-base lg:mb-8 lg:text-lg">
-                {card.description}
+                {service.description}
               </p>
 
               {/* Service Button */}
-              <Link href={card.href}>
+              <Link href={service.href}>
                 <button className="group bg-secondary/10 hover:bg-secondary/20 border-secondary/30 hover:border-secondary text-secondary inline-flex cursor-pointer items-center gap-2 rounded-md border px-4 py-2 backdrop-blur-sm duration-300 hover:text-white sm:gap-3 sm:px-6 sm:py-3">
                   <span className="text-sm font-medium tracking-wide sm:text-base">
                     Service

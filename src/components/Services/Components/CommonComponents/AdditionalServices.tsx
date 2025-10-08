@@ -1,46 +1,8 @@
+import { servicesData } from "@/data/ServicesData";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const AdditionalServices: React.FC = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Corporate & Foreign Direct Investment",
-      description:
-        "Business formation, governance, M&A, and regulatory advice for corporate clients.",
-      image: "/images/services/CFD.avif",
-      buttonText: "Service",
-      href: "/services/corporate-and-foreign-direct-investment",
-    },
-    {
-      id: 2,
-      title: "Taxation & VAT",
-      description:
-        "Tax planning, compliance, and dispute resolution for businesses.",
-      image: "/images/services/TV.avif",
-      buttonText: "Service",
-      href: "/services/taxation-and-vat",
-    },
-    {
-      id: 3,
-      title: "Banking and Financial Matters",
-      description:
-        "Advising on banking regulations, compliance, and financial transactions.",
-      image: "/images/services/BFM.avif",
-      buttonText: "Service",
-      href: "/services/banking-and-financial-matters",
-    },
-    {
-      id: 4,
-      title: "Business Setup in Bangladesh",
-      description:
-        "Expert legal guidance for setting up and operating a business in Bangladesh.",
-      image: "/images/services/BSB.avif",
-      buttonText: "Service",
-      href: "/services/business-setup-in-bangladesh",
-    },
-  ];
-
   return (
     <section className="px-6 py-16">
       <div className="mx-auto">
@@ -60,7 +22,7 @@ const AdditionalServices: React.FC = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
-          {services.map((service) => (
+          {servicesData.map((service) => (
             <div
               key={service.id}
               className="group relative h-80 overflow-hidden bg-cover bg-center bg-no-repeat lg:h-[500px]"

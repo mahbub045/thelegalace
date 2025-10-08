@@ -1,36 +1,10 @@
+import { servicesData } from "@/data/ServicesData";
 import { ArrowRightToLine } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Services: React.FC = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Corporate & Foreign Direct Investment",
-      image: "/images/services/CFD.avif",
-      href: "/services/corporate-and-foreign-direct-investment",
-    },
-    {
-      id: 2,
-      title: "Taxation & VAT",
-      image: "/images/services/TV.avif",
-      href: "/services/taxation-and-vat",
-    },
-    {
-      id: 3,
-      title: "Banking and Financial Matters",
-      image: "/images/services/BFM.avif",
-      href: "/services/banking-and-financial-matters",
-    },
-    {
-      id: 4,
-      title: "Business Setup in Bangladesh",
-      image: "/images/services/BSB.avif",
-      href: "/services/business-setup-in-bangladesh",
-    },
-  ];
-
   return (
     <div className="relative overflow-hidden px-4 py-8 text-white sm:px-6 sm:py-12 md:px-10 md:py-16 lg:px-20">
       {/* Hero Section */}
@@ -86,7 +60,7 @@ const Services: React.FC = () => {
 
           {/* Services List */}
           <div className="space-y-4 sm:space-y-6">
-            {services.map((service) => (
+            {servicesData.map((service) => (
               <Link
                 key={service.id}
                 href={service.href}
