@@ -22,7 +22,7 @@ const CFLBanner: React.FC<CLBannerProps> = ({
       <div className="absolute inset-0 -z-10">
         <Image
           src={backgroundImage}
-          alt="Corporate Law - Scales of Justice"
+          alt="Corporate & Foreign Direct Investment - Scales of Justice"
           fill
           className="object-cover"
           priority

@@ -1,7 +1,7 @@
 import React from "react";
 import ExpertLegalSolutions from "../../CommonComponents/ExpertLegalSolutions";
 
-const CLAbout: React.FC = () => {
+const CFLAbout: React.FC = () => {
   const keyServiceAreas = [
     {
       title: "Corporate Law:",
@@ -136,4 +136,4 @@ const CLAbout: React.FC = () => {
   );
 };
 
-export default CLAbout;
+export default CFLAbout;
