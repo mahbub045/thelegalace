@@ -9,12 +9,12 @@ interface CLBannerProps {
   backgroundImage?: string;
 }
 
-const CLBanner: React.FC<CLBannerProps> = ({
-  title = "CORPORATE LAW",
+const CFLBanner: React.FC<CLBannerProps> = ({
+  title = "Corporate & Foreign Direct Investment Law",
   subtitle = "Providing comprehensive services in business formation, mergers, acquisitions, and corporate governance.",
   buttonText = "Discover",
   onButtonClick,
-  backgroundImage = "/images/services/CLaw.avif",
+  backgroundImage = "/images/services/CFLaw.avif",
 }) => {
   return (
     <section className="relative flex h-screen items-center justify-center overflow-hidden">
@@ -34,7 +34,7 @@ const CLBanner: React.FC<CLBannerProps> = ({
       {/* Content Container */}
       <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
         {/* Main Title */}
-        <h1 className="mb-8 text-5xl leading-none font-bold tracking-wider text-white drop-shadow-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+        <h1 className="mb-8 mt-30 text-5xl leading-none font-bold tracking-wider text-white drop-shadow-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl transition-transform duration-500 hover:scale-105">
           {title}
         </h1>
 
@@ -69,4 +69,4 @@ const CLBanner: React.FC<CLBannerProps> = ({
   );
 };
 
-export default CLBanner;
+export default CFLBanner;

@@ -7,7 +7,7 @@ const ServiceCard: React.FC = () => {
     {
       id: 1,
       title: "Corporate & Foreign Direct Investment Law",
-      image: "/images/services/CLaw.avif",
+      image: "/images/services/CFLaw.avif",
       description:
         "Business formation, governance, M&A, and regulatory advice for corporate clients.",
       href: "/services/corporate-and-foreign-direct-nvestment-law",

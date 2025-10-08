@@ -1,13 +1,13 @@
 import AdditionalServices from "../CommonComponents/AdditionalServices";
 import GetConsultancy from "../CommonComponents/GetConsultancy";
 import CLAbout from "./Components/CLAbout";
-import CLBanner from "./Components/CLBanner";
+import CFLBanner from "./Components/CFLBanner";
 import Testimonial from "./Components/Testimonial";
 
 const CorporateAndForeignDirectInvestmentLaw: React.FC = () => {
   return (
     <>
-      <CLBanner />
+      <CFLBanner />
       <CLAbout />
       <GetConsultancy />
       <Testimonial />

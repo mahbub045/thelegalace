@@ -8,7 +8,7 @@ const AdditionalServices: React.FC = () => {
       title: "CORPORATE LAW",
       description:
         "Business formation, governance, M&A, and regulatory advice for corporate clients.",
-      image: "/images/services/CLaw.avif",
+      image: "/images/services/CFLaw.avif",
       buttonText: "Service",
       href: "/services/corporate-law",
     },
