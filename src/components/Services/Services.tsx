@@ -1,5 +1,5 @@
 import Banner from "./Components/Banner";
-import GetConsultancy from "./Components/GetConsultancy";
+import GetConsultancy from "./Components/CommonComponents/GetConsultancy";
 import ServiceCard from "./Components/ServiceCard";
 
 const Services: React.FC = () => {
