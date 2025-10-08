@@ -18,12 +18,25 @@ const Banner: React.FC<ServicesBannerProps> = ({
   attorneyImage = "/images/services/attorney-professional.jpg",
 }) => {
   return (
-    <section className="relative mt-14 flex items-center justify-center overflow-hidden sm:mt-16 md:mt-18 lg:mt-20">
-      {/* Dark starry background */}
-      <div className="absolute inset-0 -z-20">
-        <div className="from-primary/80 via-primary/60 to-primary/80 h-full w-full bg-gradient-to-br">
+    <section className="relative mt-14 flex min-h-screen items-center justify-center overflow-hidden sm:mt-16 md:mt-18 lg:mt-20">
+      {/* Full Page Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src={attorneyImage}
+          alt="Legal professional"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
+      </div>
+
+      {/* Dark starry background overlay */}
+      <div className="absolute inset-0 -z-10">
+        <div className="from-primary/30 via-primary/20 to-primary/30 h-full w-full bg-gradient-to-br">
           {/* Starry effect */}
-          <div className="absolute inset-0 opacity-30">
+          <div className="absolute inset-0 opacity-20">
             <div className="absolute top-10 left-10 h-1 w-1 animate-pulse rounded-full bg-white"></div>
             <div className="absolute top-20 right-20 h-1 w-1 animate-pulse rounded-full bg-white delay-75"></div>
             <div className="absolute top-1/3 left-1/4 h-1 w-1 animate-pulse rounded-full bg-white delay-150"></div>
@@ -55,21 +68,8 @@ const Banner: React.FC<ServicesBannerProps> = ({
 
       {/* Content Container */}
       <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
-        {/* Gavel/Scales Image positioned above text */}
-        <div className="mb-8 flex justify-center">
-          <div className="group relative mt-3 h-48 w-64 overflow-hidden rounded-2xl sm:h-60 sm:w-80 md:h-72 md:w-96">
-            <Image
-              src={attorneyImage}
-              alt="Legal scales and gavel"
-              fill
-              className="rounded-2xl object-contain transition-transform duration-300 ease-in-out group-hover:scale-105"
-              priority
-            />
-          </div>
-        </div>
-
-        {/* Main Title positioned below image */}
-        <h1 className="mb-8 text-6xl leading-none font-bold tracking-[0.1em] text-white drop-shadow-2xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem]">
+        {/* Main Title */}
+        <h1 className="mb-8 text-6xl leading-none font-bold tracking-[0.1em] text-white drop-shadow-2xl transition-transform duration-500 hover:scale-105 sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem]">
           {title}
         </h1>
 
