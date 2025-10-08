@@ -5,39 +5,39 @@ const AdditionalServices: React.FC = () => {
   const services = [
     {
       id: 1,
-      title: "CORPORATE LAW",
+      title: "Corporate & Foreign Direct Investment Law",
       description:
         "Business formation, governance, M&A, and regulatory advice for corporate clients.",
       image: "/images/services/CFLaw.avif",
       buttonText: "Service",
-      href: "/services/corporate-law",
+      href: "/services/corporate-and-foreign-direct-nvestment-law",
     },
     {
       id: 2,
-      title: "REAL ESTATE LAW",
+      title: "Taxation & VAT Law",
       description:
-        "Commercial and residential transactions, leasing, and property disputes.",
-      image: "/images/services/RELaw.avif",
+        "Tax planning, compliance, and dispute resolution for businesses.",
+      image: "/images/services/TVLaw.avif",
       buttonText: "Service",
-      href: "/services/real-estate-law",
+      href: "/services/taxation-and-vat-law",
     },
     {
       id: 3,
-      title: "EMPLOYMENT LAW",
+      title: "Banking and Financial Matters Law",
       description:
-        "Contracts, workplace issues, wrongful termination, and employee benefits.",
-      image: "/images/services/ELaw.avif",
+        "Advising on banking regulations, compliance, and financial transactions.",
+      image: "/images/services/BFMLaw.avif",
       buttonText: "Service",
-      href: "/services/employment-law",
+      href: "/services/banking-and-financial-matters-law",
     },
     {
       id: 4,
-      title: "ENVIRONMENTAL LAW",
+      title: "Business Setup in Bangladesh Law",
       description:
-        "Protecting your business and environment with expert legal guidance in law.",
-      image: "/images/services/EVLaw.avif",
+        "Expert legal guidance for setting up and operating a business in Bangladesh.",
+      image: "/images/services/BSLaw.avif",
       buttonText: "Service",
-      href: "/services/environmental-law",
+      href: "/services/business-setup-in-bangladesh-law",
     },
   ];
 
@@ -67,7 +67,7 @@ const AdditionalServices: React.FC = () => {
               style={{ backgroundImage: `url(${service.image})` }}
             >
               {/* Dark Overlay */}
-              <div className="absolute inset-0 bg-black/60 transition-all duration-300 group-hover:bg-black/50"></div>
+              <div className="absolute inset-0 bg-black/30 transition-all duration-300 group-hover:bg-black/20"></div>
 
               {/* Content */}
               <div className="relative z-10 flex h-full flex-col justify-end p-8">

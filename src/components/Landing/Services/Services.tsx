@@ -1,28 +1,33 @@
 import { ArrowRightToLine } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Services: React.FC = () => {
   const services = [
     {
       id: 1,
-      title: "CORPORATE LAW",
-      image: "/images/home/services/CLaw.png",
+      title: "Corporate & Foreign Direct Investment Law",
+      image: "/images/services/CFLaw.avif",
+      href: "/services/corporate-and-foreign-direct-investment-law",
     },
     {
       id: 2,
-      title: "REAL ESTATE LAW",
-      image: "/images/home/services/RELaw.png",
+      title: "Taxation & VAT Law",
+      image: "/images/services/TVLaw.avif",
+      href: "/services/taxation-and-vat-law",
     },
     {
       id: 3,
-      title: "EMPLOYMENT LAW",
-      image: "/images/home/services/ELaw.png",
+      title: "Banking and Financial Matters Law",
+      image: "/images/services/BFMLaw.avif",
+      href: "/services/banking-and-financial-matters-law",
     },
     {
       id: 4,
-      title: "ENVIRONMENTAL LAW",
-      image: "/images/home/services/EVLaw.png",
+      title: "Business Setup in Bangladesh Law",
+      image: "/images/services/BSLaw.avif",
+      href: "/services/business-setup-in-bangladesh-law",
     },
   ];
 
@@ -82,8 +87,9 @@ const Services: React.FC = () => {
           {/* Services List */}
           <div className="space-y-4 sm:space-y-6">
             {services.map((service) => (
-              <div
+              <Link
                 key={service.id}
+                href={service.href}
                 className="group border-secondary/50 flex cursor-pointer items-center justify-between rounded-md border bg-slate-800/30 p-4 transition-all duration-500 hover:scale-102 hover:bg-slate-700/40 sm:p-6"
               >
                 <div className="flex min-w-0 flex-1 items-center space-x-3 sm:space-x-4 md:space-x-6">
@@ -106,7 +112,7 @@ const Services: React.FC = () => {
 
                 {/* Arrow */}
                 <ArrowRightToLine className="group-hover:text-link ml-2 h-5 w-5 flex-shrink-0 text-gray-400 transition-all duration-300 group-hover:translate-x-1 sm:h-6 sm:w-6" />
-              </div>
+              </Link>
             ))}
           </div>
         </div>

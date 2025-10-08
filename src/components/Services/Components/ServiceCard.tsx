@@ -14,27 +14,27 @@ const ServiceCard: React.FC = () => {
     },
     {
       id: 2,
-      title: "Taxation & VAT LAW",
-      image: "/images/services/RELaw.avif",
+      title: "Taxation & VAT Law",
+      image: "/images/services/TVLaw.avif",
       description:
         "Tax planning, compliance, and dispute resolution for businesses.",
       href: "/services/taxation-and-vat-law",
     },
     {
       id: 3,
-      title: "EMPLOYMENT LAW",
-      image: "/images/services/ELaw.avif",
+      title: "Banking and Financial Matters Law",
+      image: "/images/services/BFMLaw.avif",
       description:
-        "Contracts, workplace issues, wrongful termination, and employee benefits.",
-      href: "/services/employment-law",
+        "Advising on banking regulations, compliance, and financial transactions.",
+      href: "/services/banking-and-financial-matters-law",
     },
     {
       id: 4,
-      title: "ENVIRONMENTAL LAW",
-      image: "/images/services/EVLaw.avif",
+      title: "Business Setup in Bangladesh Law",
+      image: "/images/services/BSLaw.avif",
       description:
-        "Protecting your business and environment with expert legal guidance in law.",
-      href: "/services/environmental-law",
+        "Expert legal guidance for setting up and operating a business in Bangladesh.",
+      href: "/services/business-setup-in-bangladesh-law",
     },
   ];
 
