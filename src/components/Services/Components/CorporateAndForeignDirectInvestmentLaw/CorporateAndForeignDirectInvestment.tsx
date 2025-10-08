@@ -4,7 +4,7 @@ import CLAbout from "./Components/CFLAbout";
 import CFLBanner from "./Components/CFLBanner";
 import Testimonial from "./Components/Testimonial";
 
-const CorporateAndForeignDirectInvestmentLaw: React.FC = () => {
+const CorporateAndForeignDirectInvestment: React.FC = () => {
   return (
     <>
       <CFLBanner />
@@ -16,4 +16,4 @@ const CorporateAndForeignDirectInvestmentLaw: React.FC = () => {
   );
 };
 
-export default CorporateAndForeignDirectInvestmentLaw;
+export default CorporateAndForeignDirectInvestment;

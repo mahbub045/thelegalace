@@ -5,39 +5,39 @@ const AdditionalServices: React.FC = () => {
   const services = [
     {
       id: 1,
-      title: "Corporate & Foreign Direct Investment Law",
+      title: "Corporate & Foreign Direct Investment",
       description:
         "Business formation, governance, M&A, and regulatory advice for corporate clients.",
-      image: "/images/services/CFLaw.avif",
+      image: "/images/services/CFD.avif",
       buttonText: "Service",
-      href: "/services/corporate-and-foreign-direct-nvestment-law",
+      href: "/services/corporate-and-foreign-direct-investment",
     },
     {
       id: 2,
-      title: "Taxation & VAT Law",
+      title: "Taxation & VAT",
       description:
         "Tax planning, compliance, and dispute resolution for businesses.",
-      image: "/images/services/TVLaw.avif",
+      image: "/images/services/TV.avif",
       buttonText: "Service",
-      href: "/services/taxation-and-vat-law",
+      href: "/services/taxation-and-vat",
     },
     {
       id: 3,
-      title: "Banking and Financial Matters Law",
+      title: "Banking and Financial Matters",
       description:
         "Advising on banking regulations, compliance, and financial transactions.",
-      image: "/images/services/BFMLaw.avif",
+      image: "/images/services/BFM.avif",
       buttonText: "Service",
-      href: "/services/banking-and-financial-matters-law",
+      href: "/services/banking-and-financial-matters",
     },
     {
       id: 4,
-      title: "Business Setup in Bangladesh Law",
+      title: "Business Setup in Bangladesh",
       description:
         "Expert legal guidance for setting up and operating a business in Bangladesh.",
-      image: "/images/services/BSLaw.avif",
+      image: "/images/services/BSB.avif",
       buttonText: "Service",
-      href: "/services/business-setup-in-bangladesh-law",
+      href: "/services/business-setup-in-bangladesh",
     },
   ];
 

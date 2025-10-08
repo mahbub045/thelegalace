@@ -7,7 +7,7 @@ const CFLBanner: React.FC = () => {
         title="Corporate & Foreign Direct Investment Law"
         subtitle="Providing comprehensive services in business formation, mergers, acquisitions, and corporate governance."
         buttonText="Discover"
-        backgroundImage="/images/services/CFLaw.avif"
+        backgroundImage="/images/services/CFD.avif"
       />
     </div>
   );

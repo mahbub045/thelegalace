@@ -7,27 +7,27 @@ const Services: React.FC = () => {
   const services = [
     {
       id: 1,
-      title: "Corporate & Foreign Direct Investment Law",
-      image: "/images/services/CFLaw.avif",
-      href: "/services/corporate-and-foreign-direct-investment-law",
+      title: "Corporate & Foreign Direct Investment",
+      image: "/images/services/CFD.avif",
+      href: "/services/corporate-and-foreign-direct-investment",
     },
     {
       id: 2,
-      title: "Taxation & VAT Law",
-      image: "/images/services/TVLaw.avif",
-      href: "/services/taxation-and-vat-law",
+      title: "Taxation & VAT",
+      image: "/images/services/TV.avif",
+      href: "/services/taxation-and-vat",
     },
     {
       id: 3,
-      title: "Banking and Financial Matters Law",
-      image: "/images/services/BFMLaw.avif",
-      href: "/services/banking-and-financial-matters-law",
+      title: "Banking and Financial Matters",
+      image: "/images/services/BFM.avif",
+      href: "/services/banking-and-financial-matters",
     },
     {
       id: 4,
-      title: "Business Setup in Bangladesh Law",
-      image: "/images/services/BSLaw.avif",
-      href: "/services/business-setup-in-bangladesh-law",
+      title: "Business Setup in Bangladesh",
+      image: "/images/services/BSB.avif",
+      href: "/services/business-setup-in-bangladesh",
     },
   ];
 
