@@ -14,11 +14,11 @@ const ServiceCard: React.FC = () => {
     },
     {
       id: 2,
-      title: "REAL ESTATE LAW",
+      title: "Taxation & VAT LAW",
       image: "/images/services/RELaw.avif",
       description:
-        "Commercial and residential transactions, leasing, and property disputes.",
-      href: "/services/real-estate-law",
+        "Tax planning, compliance, and dispute resolution for businesses.",
+      href: "/services/taxation-and-vat-law",
     },
     {
       id: 3,

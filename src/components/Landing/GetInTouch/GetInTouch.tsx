@@ -74,7 +74,7 @@ const GetInTouch: React.FC = () => {
               <Link
                 key={item.id}
                 href={item.href}
-                className="group flex w-full items-center gap-4 px-6 py-4 transition-colors duration-200 hover:bg-slate-700/30 sm:gap-6 sm:py-6"
+                className="group flex w-full items-center gap-4 px-6 py-4 transition-transform duration-500 hover:scale-105 hover:bg-slate-700/30 sm:gap-6 sm:py-6"
               >
                 <div className="h-16 w-24 flex-shrink-0 overflow-hidden rounded-sm bg-black/20 sm:h-20 sm:w-28 md:h-24 md:w-32">
                   <Image

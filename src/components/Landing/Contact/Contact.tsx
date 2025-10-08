@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                   alt="Elegant law office interior with wooden furniture and warm lighting"
                   width={500}
                   height={300}
-                  className="h-48 w-full rounded-md object-cover sm:h-56 md:h-64"
+                  className="h-48 w-full rounded-md object-cover transition-transform duration-500 hover:scale-105 sm:h-56 md:h-64"
                 />
                 {/* Overlay over image */}
                 <div className="bg-secondary/30 pointer-events-none absolute inset-0 rounded-md" />
@@ -138,7 +138,7 @@ const Contact: React.FC = () => {
               </svg>
             </div>
 
-            <blockquote className="text-center text-white">
+            <blockquote className="text-center text-white transition-transform duration-500 hover:scale-105">
               <p className="mb-3 text-sm leading-tight sm:mb-4 sm:text-base md:mb-6 md:text-xl lg:text-2xl xl:text-3xl">
                 &quot;EXCEPTIONAL LEGAL REPRESENTATION, DISTINCTLY YOURS.&quot;
               </p>
@@ -182,7 +182,7 @@ const Contact: React.FC = () => {
                         alt={item.alt}
                         width={400}
                         height={280}
-                        className="h-40 w-full rounded-md object-cover sm:h-32 md:h-36 lg:h-40 xl:h-44"
+                        className="h-40 w-full rounded-md object-cover transition-transform duration-500 hover:scale-105 sm:h-32 md:h-36 lg:h-40 xl:h-44"
                       />
                     </div>
                     <div className="sm:w-2/3 md:w-3/5 lg:w-2/3 xl:w-3/5">
