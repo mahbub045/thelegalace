@@ -1,46 +1,8 @@
+import { servicesData } from "@/data/ServicesData";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const AdditionalServices: React.FC = () => {
-  const services = [
-    {
-      id: 1,
-      title: "CORPORATE LAW",
-      description:
-        "Business formation, governance, M&A, and regulatory advice for corporate clients.",
-      image: "/images/services/CFLaw.avif",
-      buttonText: "Service",
-      href: "/services/corporate-law",
-    },
-    {
-      id: 2,
-      title: "REAL ESTATE LAW",
-      description:
-        "Commercial and residential transactions, leasing, and property disputes.",
-      image: "/images/services/RELaw.avif",
-      buttonText: "Service",
-      href: "/services/real-estate-law",
-    },
-    {
-      id: 3,
-      title: "EMPLOYMENT LAW",
-      description:
-        "Contracts, workplace issues, wrongful termination, and employee benefits.",
-      image: "/images/services/ELaw.avif",
-      buttonText: "Service",
-      href: "/services/employment-law",
-    },
-    {
-      id: 4,
-      title: "ENVIRONMENTAL LAW",
-      description:
-        "Protecting your business and environment with expert legal guidance in law.",
-      image: "/images/services/EVLaw.avif",
-      buttonText: "Service",
-      href: "/services/environmental-law",
-    },
-  ];
-
   return (
     <section className="px-6 py-16">
       <div className="mx-auto">
@@ -60,14 +22,14 @@ const AdditionalServices: React.FC = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
-          {services.map((service) => (
+          {servicesData.map((service) => (
             <div
               key={service.id}
               className="group relative h-80 overflow-hidden bg-cover bg-center bg-no-repeat lg:h-[500px]"
               style={{ backgroundImage: `url(${service.image})` }}
             >
               {/* Dark Overlay */}
-              <div className="absolute inset-0 bg-black/60 transition-all duration-300 group-hover:bg-black/50"></div>
+              <div className="absolute inset-0 bg-black/30 transition-all duration-300 group-hover:bg-black/20"></div>
 
               {/* Content */}
               <div className="relative z-10 flex h-full flex-col justify-end p-8">
