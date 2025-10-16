@@ -61,7 +61,7 @@ const NavBar: React.FC = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`font-outfit text-secondary text-hover text-sm font-bold tracking-widest uppercase ${
+                className={`font-outfit text-hover text-sm font-bold tracking-widest uppercase ${
                   isActive(item.href) ? "active" : ""
                 }`}
               >

@@ -53,7 +53,7 @@ const CFLAbout: React.FC = () => {
           {/* About the Service Header */}
           <div className="mb-12 flex items-center justify-center">
             <div className="bg-secondary/60 h-px max-w-24 flex-1"></div>
-            <span className="text-secondary/80 mx-6 text-sm font-medium tracking-[0.3em] uppercase">
+            <span className="text-secondary/80 mx-6 text-2xl font-medium tracking-[0.3em] uppercase">
               About the Service
             </span>
             <div className="bg-secondary/60 h-px max-w-24 flex-1"></div>
