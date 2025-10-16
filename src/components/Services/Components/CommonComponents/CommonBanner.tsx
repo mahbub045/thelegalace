@@ -42,7 +42,7 @@ const CommonBanner: React.FC<CLBannerProps> = ({
         {/* Decorative Line */}
         <div className="mb-8 flex items-center justify-center">
           <div className="h-px w-16 bg-white/40 sm:w-24"></div>
-          <div className="bg-secondary mx-4 h-2 w-2 rounded-full"></div>
+          <div className="mx-4 h-2 w-2 rounded-full bg-white"></div>
           <div className="h-px w-16 bg-white/40 sm:w-24"></div>
         </div>
 

@@ -153,7 +153,7 @@ const CFLAbout: React.FC = () => {
                   const [beforeHyphen, afterHyphen] = challenge.split(" – ");
                   return (
                     <div key={index} className="flex items-start gap-4">
-                      <div className="bg-secondary mt-3 h-2 w-2 flex-shrink-0 rounded-full"></div>
+                      <div className="mt-3 h-2 w-2 flex-shrink-0 rounded-full bg-white"></div>
                       <p className="font-outfit leading-relaxed text-white/80">
                         <span className="text-xl font-semibold text-white">
                           {beforeHyphen}
@@ -184,7 +184,7 @@ const CFLAbout: React.FC = () => {
               <div className="space-y-4 text-left">
                 {services.map((service, index) => (
                   <div key={index} className="flex items-start gap-4">
-                    <div className="bg-secondary mt-3 h-2 w-2 flex-shrink-0 rounded-full"></div>
+                    <div className="mt-3 h-2 w-2 flex-shrink-0 rounded-full bg-white"></div>
                     <p className="font-outfit text-lg leading-relaxed text-white/80">
                       {service}
                     </p>

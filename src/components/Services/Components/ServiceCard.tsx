@@ -28,7 +28,7 @@ const ServiceCard: React.FC = () => {
             {/* Decorative Divider - Centered between image and content */}
             <div className="ml-16 hidden flex-col items-center justify-center px-6 lg:flex">
               <span className="mb-2 block h-28 w-[2px] rounded-full bg-gradient-to-b from-transparent via-white/40 to-white/60"></span>
-              <span className="bg-secondary/70 shadow-secondary/30 mb-2 block h-3 w-3 rounded-full shadow-lg"></span>
+              <span className="mb-2 block h-3 w-3 rounded-full bg-white shadow-lg"></span>
               <span className="block h-28 w-[2px] rounded-full bg-gradient-to-b from-white/60 via-white/40 to-transparent"></span>
             </div>
 
