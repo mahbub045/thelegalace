@@ -18,7 +18,7 @@ const Banner: React.FC<ServicesBannerProps> = ({
   attorneyImage = "/images/services/attorney-professional.jpg",
 }) => {
   return (
-    <section className="relative mt-14 flex min-h-screen items-center justify-center overflow-hidden sm:mt-16 md:mt-18 lg:mt-20">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
       {/* Full Page Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -67,7 +67,7 @@ const Banner: React.FC<ServicesBannerProps> = ({
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
+      <div className="relative z-10 mx-auto mt-14 max-w-6xl px-6 text-center sm:mt-16 md:mt-18 lg:mt-20">
         {/* Main Title */}
         <h1 className="mb-8 text-6xl leading-none font-bold tracking-[0.1em] text-white drop-shadow-2xl transition-transform duration-500 hover:scale-105 sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem]">
           {title}
