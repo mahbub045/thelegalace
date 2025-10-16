@@ -173,7 +173,7 @@ const GetConsultancy: React.FC = () => {
           {/* Decorative Divider - Between form and features */}
           <div className="z-10 hidden flex-col items-center justify-center lg:absolute lg:top-0 lg:bottom-0 lg:left-1/2 lg:flex lg:-translate-x-1/2">
             <span className="mb-4 block w-[1px] flex-1 rounded-full bg-gradient-to-b from-transparent via-white/40 to-white/60"></span>
-            <span className="bg-secondary/70 shadow-secondary/30 mb-4 block h-2 w-2 flex-shrink-0 rounded-full shadow-lg"></span>
+            <span className="mb-4 block h-2 w-2 flex-shrink-0 rounded-full bg-white shadow-lg"></span>
             <span className="block w-[1px] flex-1 rounded-full bg-gradient-to-b from-white/60 via-white/40 to-transparent"></span>
           </div>
 
