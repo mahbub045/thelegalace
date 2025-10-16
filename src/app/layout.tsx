@@ -1,3 +1,4 @@
+import CursorTrail from "@/components/CursorTrail/CursorTrail";
 import ConditionalLayout from "@/components/Layout/ConditionalLayout/ConditionalLayout";
 import type { Metadata } from "next";
 import { Outfit, Wix_Madefor_Text, Yeseva_One } from "next/font/google";
@@ -78,6 +79,7 @@ export default function RootLayout({
         suppressHydrationWarning={true}
         className={`${yesevaOne.className} ${outfit.variable} ${wixMadeforText.variable} antialiased`}
       >
+        <CursorTrail />
         <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
