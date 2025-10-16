@@ -17,43 +17,44 @@ const CommonBanner: React.FC<CLBannerProps> = ({
   backgroundImage,
 }) => {
   return (
-    <section className="relative flex h-screen items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-[80svh] items-center justify-center overflow-hidden md:min-h-[90svh] lg:min-h-screen">
       {/* Background Image with Scales of Justice */}
       <div className="absolute inset-0 -z-10">
         <Image
           src={backgroundImage || "/default-banner.jpg"}
-          alt="Corporate & Foreign Direct Investment - Scales of Justice"
+          alt={title ? `${title} - Banner` : "Service banner background image"}
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         {/* Dark overlay for text readability */}
-        <div className="from-primary/50 via-primary/40 to-primary/50 absolute inset-0 bg-gradient-to-br" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/45 to-black/60" />
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-6xl px-6 pt-24 text-center md:pt-28">
         {/* Main Title */}
-        <h1 className="mt-30 mb-8 text-5xl leading-none font-bold tracking-wider text-white drop-shadow-2xl transition-transform duration-500 hover:scale-105 sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+        <h1 className="mx-auto mb-6 inline-block max-w-5xl origin-center transform-gpu text-4xl leading-tight font-extrabold tracking-tight text-white drop-shadow-2xl transition-transform duration-300 ease-out motion-safe:hover:scale-[1.03] sm:text-5xl md:text-6xl md:leading-[1.1] motion-safe:md:hover:scale-[1.06] lg:text-7xl">
           {title}
         </h1>
 
         {/* Decorative Line */}
         <div className="mb-8 flex items-center justify-center">
-          <div className="h-px max-w-16 flex-1 bg-white/40"></div>
+          <div className="h-px w-16 bg-white/40 sm:w-24"></div>
           <div className="bg-secondary mx-4 h-2 w-2 rounded-full"></div>
-          <div className="h-px max-w-16 flex-1 bg-white/40"></div>
+          <div className="h-px w-16 bg-white/40 sm:w-24"></div>
         </div>
 
         {/* Subtitle */}
-        <p className="font-outfit mx-auto mb-8 max-w-4xl text-lg leading-relaxed font-light text-white/95 drop-shadow-lg sm:text-xl md:text-2xl">
+        <p className="font-outfit mx-auto mb-8 max-w-3xl text-base leading-relaxed font-light text-white/95 drop-shadow-lg sm:text-lg md:text-xl">
           {subtitle}
         </p>
 
         {/* Discover Button */}
         <button
           onClick={onButtonClick}
-          className="group text-secondary hover:text-secondary/80 mb-8 inline-flex transform flex-col items-center gap-1"
+          className="group text-secondary hover:text-secondary/80 mb-8 inline-flex flex-col items-center gap-1"
         >
           <span className="text-xl font-medium tracking-wider drop-shadow-lg sm:text-2xl">
             {buttonText}
@@ -64,7 +65,7 @@ const CommonBanner: React.FC<CLBannerProps> = ({
       </div>
 
       {/* Decorative Elements */}
-      <div className="pointer-events-none absolute right-0 bottom-0 left-0 h-32 bg-gradient-to-t from-black/20 to-transparent" />
+      <div className="pointer-events-none absolute right-0 bottom-0 left-0 h-32 bg-gradient-to-t from-black/30 to-transparent" />
     </section>
   );
 };
